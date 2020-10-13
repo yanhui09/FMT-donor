@@ -1,0 +1,433 @@
+geneID	p	DONOR1	DONOR2	FMT1	FMT2	Product	EC_number	koID	ko_anno	module_ID	module_anno	pathway_ID	pathway_anno
+g000125	0.0336538461538462	1	0	0.555555555555556	0	Thiamine pyrophosphokinase	2.7.6.2	K00949	thiN, TPK1, THI80; thiamine pyrophosphokinase [EC:2.7.6.2]	NA	NA	path:map00730	Thiamine metabolism
+g000161	0.034965034965035	0	1	0.111111111111111	0.714285714285714	hypothetical protein			NA	NA	NA	NA	NA
+g000167	0.000874125874125875	1	1	1	0.142857142857143	KHG/KDPG aldolase		K01625	eda; 2-dehydro-3-deoxyphosphogluconate aldolase / (4S)-4-hydroxy-2-oxoglutarate aldolase [EC:4.1.2.14 4.1.3.42]	md:M00008	Entner-Doudoroff pathway, glucose-6P => glyceraldehyde-3P + pyruvate	path:map00030	Pentose phosphate pathway
+g000193	0.0113636363636364	1	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g000220	0.0013986013986014	0	1	0.111111111111111	1	Glucose-1-phosphate thymidylyltransferase	2.7.7.24	K00973	E2.7.7.24, rfbA, rffH; glucose-1-phosphate thymidylyltransferase [EC:2.7.7.24]	md:M00793	dTDP-L-rhamnose biosynthesis	path:map00521	Streptomycin biosynthesis
+g000223	0.0013986013986014	0	1	0.111111111111111	1	hypothetical protein			NA	NA	NA	NA	NA
+g000224	0.0013986013986014	0	1	0.111111111111111	1	hypothetical protein			NA	NA	NA	NA	NA
+g000263	0.0336538461538462	1	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g000264	0.0336538461538462	0	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g000402	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g000421	0.0013986013986014	0	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g000478	0.0336538461538462	0	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g000479	0.00323426573426573	0	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g000591	8.74125874125873e-05	0	1	0	1	IS982 family transposase ISLhe7			NA	NA	NA	NA	NA
+g000616	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g000744	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g000752	0.034965034965035	0	1	0.111111111111111	0.714285714285714	hypothetical protein			NA	NA	NA	NA	NA
+g000786	0.0113636363636364	1	1	0.333333333333333	1	Lactate 2-monooxygenase	1.13.12.4		NA	NA	NA	NA	NA
+g000922	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g000923	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g000924	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g000925	0.0336538461538462	0	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g001318	0.00323426573426573	0	1	0.222222222222222	1	hypothetical protein			NA	NA	NA	NA	NA
+g001424	8.74125874125873e-05	1	0	1	0	Phosphate-binding protein PstS 1		K02040	pstS; phosphate transport system substrate-binding protein	NA	NA	path:map02010	ABC transporters
+g001426	8.74125874125873e-05	1	0	1	0	IS982 family transposase ISLhe7			NA	NA	NA	NA	NA
+g001433	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g002461	0.0192307692307692	0	0	0	0.571428571428571	Holliday junction resolvase RecU	3.1.22.4	K03700	recU; recombination protein U	NA	NA	NA	NA
+g002462	0.0192307692307692	0	0	0	0.571428571428571	Transcription termination/antitermination protein NusA			NA	NA	NA	NA	NA
+g002463	8.74125874125873e-05	0	0	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g002477	0.0113636363636364	1	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g002478	0.0013986013986014	1	0	0.888888888888889	0	Protein QmcA			NA	NA	NA	NA	NA
+g002486	8.74125874125873e-05	1	0	1	0	Transcriptional regulator MtlR		K03483	mtlR; mannitol operon transcriptional antiterminator	NA	NA	NA	NA
+g002521	0.0113636363636364	1	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g002522	0.0013986013986014	1	0	0.888888888888889	0	putative inner membrane transporter YicL			NA	NA	NA	NA	NA
+g002523	0.00323426573426573	1	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g002524	8.74125874125873e-05	1	0	1	0	putative endoglucanase	3.2.1.4		NA	NA	NA	NA	NA
+g002525	8.74125874125873e-05	1	0	1	0	S-layer protein			NA	NA	NA	NA	NA
+g005124	0.00874125874125874	0	1	0.111111111111111	0.857142857142857	Single-stranded DNA-binding protein			NA	NA	NA	NA	NA
+g005280	0.00480769230769231	0	0	0	0.714285714285714	hypothetical protein			NA	NA	NA	NA	NA
+g005285	0.000874125874125875	0	0	0	0.857142857142857	putative ABC transporter ATP-binding protein NosF			NA	NA	NA	NA	NA
+g005353	0.00323426573426573	1	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g005357	8.74125874125873e-05	1	0	1	0	Pyruvate oxidase	1.2.3.3	K00158	E1.2.3.3, poxL; pyruvate oxidase [EC:1.2.3.3]	NA	NA	path:map00620	Pyruvate metabolism
+g005358	0.00480769230769231	1	1	1	0.285714285714286	hypothetical protein			NA	NA	NA	NA	NA
+g005446	0.0405594405594406	0	1	0.222222222222222	0.857142857142857	IS982 family transposase ISLh1			NA	NA	NA	NA	NA
+g005568	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g005570	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g005572	0.00323426573426573	0	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g005573	8.74125874125873e-05	1	0	1	0	2,3,4,5-tetrahydropyridine-2,6-dicarboxylate N-acetyltransferase	2.3.1.89	K05822	dapH, dapD; tetrahydrodipicolinate N-acetyltransferase [EC:2.3.1.89]	md:M00525	Lysine biosynthesis, acetyl-DAP pathway, aspartate => lysine	path:map00300	Lysine biosynthesis
+g005626	0.0336538461538462	0	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g005627	0.0336538461538462	0	0	0.555555555555556	0	Glycolate permease GlcA		K02550	glcA; glycolate permease	NA	NA	NA	NA
+g005628	0.0013986013986014	0	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g005629	0.00323426573426573	0	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g005630	0.0336538461538462	0	0	0.555555555555556	0	Ribosomal RNA small subunit methyltransferase C	2.1.1.172	K00564	rsmC; 16S rRNA (guanine1207-N2)-methyltransferase [EC:2.1.1.172]	NA	NA	NA	NA
+g005706	0.00323426573426573	1	0	0.777777777777778	0	ATP-dependent DNA helicase PcrA	3.6.4.12	K03657	uvrD, pcrA; DNA helicase II / ATP-dependent DNA helicase PcrA [EC:3.6.4.12]	NA	NA	path:map03420	Nucleotide excision repair
+g005709	0.0013986013986014	1	0	0.888888888888889	0	DNA ligase	6.5.1.2	K01972	E6.5.1.2, ligA, ligB; DNA ligase (NAD+) [EC:6.5.1.2]	NA	NA	path:map03030	DNA replication
+g005712	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g005713	0.00323426573426573	1	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g005723	0.0113636363636364	0	0	0.666666666666667	0	Putative multidrug resistance protein MdtD			NA	NA	NA	NA	NA
+g005727	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g005734	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g005738	0.00323426573426573	1	0	0.777777777777778	0	IS30 family transposase ISApl1			NA	NA	NA	NA	NA
+g005740	0.0336538461538462	0	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g005741	0.0013986013986014	1	0	0.888888888888889	0	putative HTH-type transcriptional regulator YybR			NA	NA	NA	NA	NA
+g005742	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g005743	8.74125874125873e-05	1	0	1	0	Zinc-type alcohol dehydrogenase-like protein			NA	NA	NA	NA	NA
+g005744	8.74125874125873e-05	1	0	1	0	Methylated-DNA--protein-cysteine methyltransferase	2.1.1.63		NA	NA	NA	NA	NA
+g005745	0.0013986013986014	0	0	0.888888888888889	0	Methylated-DNA--protein-cysteine methyltransferase	2.1.1.63		NA	NA	NA	NA	NA
+g005746	0.0013986013986014	0	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g005747	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g005748	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g005749	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g005750	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g005751	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g005752	8.74125874125873e-05	1	0	1	0	L-lactate dehydrogenase	1.1.-.-		NA	NA	NA	NA	NA
+g005753	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g005754	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g005755	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g005756	8.74125874125873e-05	1	0	1	0	Serine hydroxymethyltransferase	2.1.2.1	K00600	glyA, SHMT; glycine hydroxymethyltransferase [EC:2.1.2.1]	md:M00140	C1-unit interconversion, prokaryotes	path:map00260	Glycine, serine and threonine metabolism
+g005757	8.74125874125873e-05	1	0	1	0	Serine hydroxymethyltransferase	2.1.2.1	K00600	glyA, SHMT; glycine hydroxymethyltransferase [EC:2.1.2.1]	md:M00140	C1-unit interconversion, prokaryotes	path:map00260	Glycine, serine and threonine metabolism
+g005758	8.74125874125873e-05	1	0	1	0	Aspartate-proton symporter			NA	NA	NA	NA	NA
+g005762	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g005763	0.0013986013986014	1	0	0.888888888888889	0	Oligo-1,6-glucosidase	3.2.1.10		NA	NA	NA	NA	NA
+g005764	8.74125874125873e-05	1	0	1	0	Glucan 1,6-alpha-glucosidase	3.2.1.70	K01215	dexB; glucan 1,6-alpha-glucosidase [EC:3.2.1.70]	NA	NA	NA	NA
+g005765	0.0013986013986014	1	0	0.888888888888889	0	Oligo-1,6-glucosidase	3.2.1.10		NA	NA	NA	NA	NA
+g005769	8.74125874125873e-05	1	0	1	0	ATP-dependent RNA helicase CshA	3.6.4.13	K05592	deaD, cshA; ATP-dependent RNA helicase DeaD [EC:3.6.4.13]	NA	NA	path:map03018	RNA degradation
+g005770	8.74125874125873e-05	1	0	1	0	ATP-dependent RNA helicase CshA	3.6.4.13	K05592	deaD, cshA; ATP-dependent RNA helicase DeaD [EC:3.6.4.13]	NA	NA	path:map03018	RNA degradation
+g005771	8.74125874125873e-05	1	0	1	0	Holo-[acyl-carrier-protein] synthase	2.7.8.7	K00997	acpS; holo-[acyl-carrier protein] synthase [EC:2.7.8.7]	NA	NA	path:map00770	Pantothenate and CoA biosynthesis
+g005775	0.0113636363636364	0	0	0.666666666666667	0	Transcription-repair-coupling factor	3.6.4.-	K03723	mfd; transcription-repair coupling factor (superfamily II helicase) [EC:3.6.4.-]	NA	NA	path:map03420	Nucleotide excision repair
+g005777	8.74125874125873e-05	1	0	1	0	Transcription-repair-coupling factor	3.6.4.-	K03723	mfd; transcription-repair coupling factor (superfamily II helicase) [EC:3.6.4.-]	NA	NA	path:map03420	Nucleotide excision repair
+g005778	8.74125874125873e-05	1	0	1	0	Transcription-repair-coupling factor	3.6.4.-		NA	NA	NA	NA	NA
+g005779	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g005780	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g005781	8.74125874125873e-05	1	0	1	0	tRNA(Ile)-lysidine synthase	6.3.4.19		NA	NA	NA	NA	NA
+g005783	0.0013986013986014	0	0	0.888888888888889	0	ATP-dependent zinc metalloprotease FtsH	3.4.24.-	K03798	ftsH, hflB; cell division protease FtsH [EC:3.4.24.-]	NA	NA	NA	NA
+g005784	8.74125874125873e-05	1	0	1	0	ATP-dependent zinc metalloprotease FtsH	3.4.24.-	K03798	ftsH, hflB; cell division protease FtsH [EC:3.4.24.-]	NA	NA	NA	NA
+g005785	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g005786	8.74125874125873e-05	1	0	1	0	tRNA-dihydrouridine synthase B	1.3.1.-	K05540	dusB; tRNA-dihydrouridine synthase B [EC:1.-.-.-]	NA	NA	NA	NA
+g005787	8.74125874125873e-05	1	0	1	0	tRNA-dihydrouridine synthase B	1.3.1.-	K05540	dusB; tRNA-dihydrouridine synthase B [EC:1.-.-.-]	NA	NA	NA	NA
+g005788	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g005789	8.74125874125873e-05	1	0	1	0	ATP-dependent Clp protease ATP-binding subunit ClpC1		K03696	clpC; ATP-dependent Clp protease ATP-binding subunit ClpC	NA	NA	NA	NA
+g005790	8.74125874125873e-05	1	0	1	0	ATP-dependent Clp protease ATP-binding subunit ClpC		K03696	clpC; ATP-dependent Clp protease ATP-binding subunit ClpC	NA	NA	NA	NA
+g005791	8.74125874125873e-05	1	0	1	0	ATP-dependent Clp protease ATP-binding subunit ClpC		K03696	clpC; ATP-dependent Clp protease ATP-binding subunit ClpC	NA	NA	NA	NA
+g005793	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g005794	0.0336538461538462	0	0	0.555555555555556	0	DNA-directed RNA polymerase subunit beta'	2.7.7.6	K03046	rpoC; DNA-directed RNA polymerase subunit beta' [EC:2.7.7.6]	NA	NA	path:map03020	RNA polymerase
+g005798	8.74125874125873e-05	1	0	1	0	30S ribosomal protein S19		K02965	RP-S19, rpsS; small subunit ribosomal protein S19	NA	NA	path:map03010	Ribosome
+g005799	8.74125874125873e-05	1	0	1	0	50S ribosomal protein L14		K02874	RP-L14, MRPL14, rplN; large subunit ribosomal protein L14	NA	NA	path:map03010	Ribosome
+g005912	0.0013986013986014	1	0	0.888888888888889	0	UDP-N-acetylglucosamine--N-acetylmuramyl-(pentapeptide) pyrophosphoryl-undecaprenol N-acetylglucosamine transferase	2.4.1.227		NA	NA	NA	NA	NA
+g006388	0.00323426573426573	1	1	0.222222222222222	1	hypothetical protein			NA	NA	NA	NA	NA
+g006691	0.0336538461538462	1	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g006895	0.0336538461538462	1	1	0.444444444444444	1	Carbamoyl-phosphate synthase large chain	6.3.5.5	K01955	carB, CPA2; carbamoyl-phosphate synthase large subunit [EC:6.3.5.5]	md:M00051	Uridine monophosphate biosynthesis, glutamine (+ PRPP) => UMP	path:map00240	Pyrimidine metabolism
+g007005	0.0192307692307692	1	1	1	0.428571428571429	hypothetical protein			NA	NA	NA	NA	NA
+g007020	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g007023	8.74125874125873e-05	1	0	1	0	putative protein YhaN			NA	NA	NA	NA	NA
+g007030	0.00323426573426573	0	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g007036	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g007053	0.0336538461538462	1	1	0.444444444444444	1	hypothetical protein			NA	NA	NA	NA	NA
+g007054	0.0336538461538462	1	1	0.444444444444444	1	hypothetical protein			NA	NA	NA	NA	NA
+g007082	0.000874125874125875	0	1	0	0.857142857142857	putative ABC transporter ATP-binding protein		K06147	ABCB-BAC; ATP-binding cassette, subfamily B, bacterial	NA	NA	NA	NA
+g007087	0.0192307692307692	0	0	0	0.571428571428571	ABC transporter glutamine-binding protein GlnH		K10039	peb1A, glnH; aspartate/glutamate/glutamine transport system substrate-binding protein	NA	NA	path:map02010	ABC transporters
+g007090	0.000874125874125875	0	1	0	0.857142857142857	hypothetical protein			NA	NA	NA	NA	NA
+g007144	0.0113636363636364	1	0	0.666666666666667	0	Redox-sensing transcriptional repressor Rex		K01926	rex; redox-sensing transcriptional repressor	NA	NA	NA	NA
+g007165	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g007189	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g007190	8.74125874125873e-05	0	0	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g007191	0.00323426573426573	0	1	0.222222222222222	1	hypothetical protein			NA	NA	NA	NA	NA
+g007192	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g007207	0.00323426573426573	1	0	0.777777777777778	0	Cystathionine beta-lyase	4.4.1.13	K01760	metC; cysteine-S-conjugate beta-lyase [EC:4.4.1.13]	md:M00017	Methionine biosynthesis, apartate => homoserine => methionine	path:map00270	Cysteine and methionine metabolism
+g007242	0.0336538461538462	1	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g007245	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g007246	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g007262	8.74125874125873e-05	0	1	0	1	Putative D-alanyl-D-alanine carboxypeptidase	3.4.16.4		NA	NA	NA	NA	NA
+g007305	0.00323426573426573	0	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g007306	0.0013986013986014	0	0	0.888888888888889	0	Putative glycosyltransferase EpsF	2.4.-.-	K19424	epsF; glycosyltransferase EpsF [EC:2.4.-.-]	NA	NA	NA	NA
+g007309	0.00323426573426573	1	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g007320	0.00323426573426573	1	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g007333	8.74125874125873e-05	1	0	1	0	tRNA(Met) cytidine acetate ligase	6.3.4.-		NA	NA	NA	NA	NA
+g007358	8.74125874125873e-05	0	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g007385	8.74125874125873e-05	0	1	0	1	UDP-glucose 4-epimerase	5.1.3.2		NA	NA	NA	NA	NA
+g007496	0.0113636363636364	1	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g007539	0.0113636363636364	1	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g007625	0.0113636363636364	0	1	0.333333333333333	1	hypothetical protein			NA	NA	NA	NA	NA
+g007629	0.0113636363636364	1	1	0.333333333333333	1	hypothetical protein			NA	NA	NA	NA	NA
+g007713	0.000874125874125875	0	1	0	0.857142857142857	hypothetical protein			NA	NA	NA	NA	NA
+g007715	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g007780	8.74125874125873e-05	0	1	0	1	N-acetylmuramic acid 6-phosphate etherase	4.2.1.126	K07106	murQ; N-acetylmuramic acid 6-phosphate etherase [EC:4.2.1.126]	NA	NA	path:map00520	Amino sugar and nucleotide sugar metabolism
+g007783	0.0113636363636364	0	0	0.666666666666667	0	PTS system EIIBC component		K02809	PTS-Scr-EIIB, scrA, sacP, sacX, ptsS; PTS system, sucrose-specific IIB component [EC:2.7.1.211]	NA	NA	path:map00500	Starch and sucrose metabolism
+g007906	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g007919	8.74125874125873e-05	0	0	0	1	HTH-type transcriptional regulator MalR		K02529	lacI, galR; LacI family transcriptional regulator	NA	NA	NA	NA
+g007926	0.000874125874125875	0	0	0	0.857142857142857	tRNA-specific adenosine deaminase	3.5.4.33	K11991	tadA; tRNA(adenine34) deaminase [EC:3.5.4.33]	NA	NA	NA	NA
+g007951	0.0192307692307692	0	0	0	0.571428571428571	Inner membrane transporter YcaM			NA	NA	NA	NA	NA
+g007952	8.74125874125873e-05	0	1	0	1	Protein LacX, plasmid			NA	NA	NA	NA	NA
+g008050	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g008051	0.00480769230769231	0	0	0	0.714285714285714	hypothetical protein			NA	NA	NA	NA	NA
+g008058	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g008063	0.0013986013986014	0	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g008064	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g008065	0.0013986013986014	0	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g008072	0.0013986013986014	1	0	0.888888888888889	0	putative cell division protein WhiA		K09762	K09762; uncharacterized protein	NA	NA	NA	NA
+g008076	0.0113636363636364	0	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g008079	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g008085	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g008086	0.0013986013986014	0	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g008097	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g008098	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g008099	0.00323426573426573	0	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g008100	0.00323426573426573	0	0	0.777777777777778	0	UvrABC system protein A			NA	NA	NA	NA	NA
+g008102	8.74125874125873e-05	1	0	1	0	UvrABC system protein A		K03701	uvrA; excinuclease ABC subunit A	NA	NA	path:map03420	Nucleotide excision repair
+g008103	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g008108	8.74125874125873e-05	1	0	1	0	Multidrug resistance protein 3			NA	NA	NA	NA	NA
+g008109	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g008110	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g008111	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g008292	8.74125874125873e-05	1	0	1	0	Maltose/maltodextrin-binding protein		K15770	cycB, ganO; arabinogalactan oligomer / maltooligosaccharide transport system substrate-binding protein	NA	NA	path:map02010	ABC transporters
+g008320	0.0013986013986014	0	1	0.111111111111111	1	hypothetical protein			NA	NA	NA	NA	NA
+g008321	0.0336538461538462	0	0	0.555555555555556	0	Putative O-antigen transporter		K18799	wzxB, rfbX; O-antigen flippase	NA	NA	NA	NA
+g008469	0.00480769230769231	0	0	0	0.714285714285714	O-acetyl-ADP-ribose deacetylase	3.1.1.106		NA	NA	NA	NA	NA
+g008476	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g008504	0.0113636363636364	1	0	0.666666666666667	0	Apulose-4-phosphate transketolase subunit B	2.2.1.-	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	md:M00004	Pentose phosphate pathway (Pentose phosphate cycle)	path:map00030	Pentose phosphate pathway
+g008529	0.000874125874125875	0	0	0	0.857142857142857	Beta-glucoside kinase	2.7.1.85		NA	NA	NA	NA	NA
+g008599	0.0192307692307692	1	0	1	0.428571428571429	DNA polymerase I	2.7.7.7		NA	NA	NA	NA	NA
+g008608	8.74125874125873e-05	0	1	0	1	S-layer protein			NA	NA	NA	NA	NA
+g008615	0.0405594405594406	1	0	0.777777777777778	0.142857142857143	hypothetical protein			NA	NA	NA	NA	NA
+g008790	0.00323426573426573	1	0	0.777777777777778	0	PTS system fructose-specific EIIABC component		K02770	PTS-Fru-EIIC, fruA; PTS system, fructose-specific IIC component	NA	NA	path:map00051	Fructose and mannose metabolism
+g008791	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g008821	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g008847	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g008914	0.000874125874125875	0	0	0	0.857142857142857	hypothetical protein			NA	NA	NA	NA	NA
+g008941	0.00323426573426573	1	0	0.777777777777778	0	putative peptidoglycan glycosyltransferase FtsW	2.4.1.129	K03588	ftsW, spoVE; cell division protein FtsW	NA	NA	path:map04112	Cell cycle - Caulobacter
+g008950	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g008963	0.00323426573426573	0	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g009002	0.0192307692307692	0	0	0	0.571428571428571	hypothetical protein			NA	NA	NA	NA	NA
+g009036	8.74125874125873e-05	0	1	0	1	Ornithine carbamoyltransferase, catabolic	2.1.3.3		NA	NA	NA	NA	NA
+g009045	0.00323426573426573	1	0	0.777777777777778	0	Multiple sugar-binding protein		K10117	msmE; raffinose/stachyose/melibiose transport system substrate-binding protein	NA	NA	path:map02010	ABC transporters
+g009047	0.00480769230769231	0	0	0	0.714285714285714	Polyisoprenyl-teichoic acid--peptidoglycan teichoic acid transferase TagU	2.7.8.-		NA	NA	NA	NA	NA
+g009136	0.0113636363636364	1	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g009172	0.0013986013986014	0	1	0.111111111111111	1	hypothetical protein			NA	NA	NA	NA	NA
+g009175	0.0013986013986014	1	0	0.888888888888889	0	Lactose permease			NA	NA	NA	NA	NA
+g009224	0.0192307692307692	1	0	1	0.428571428571429	hypothetical protein			NA	NA	NA	NA	NA
+g009236	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g009242	0.0336538461538462	1	1	0.444444444444444	1	hypothetical protein			NA	NA	NA	NA	NA
+g009281	8.74125874125873e-05	0	0	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g009432	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g009478	0.0113636363636364	0	1	0.333333333333333	1	hypothetical protein			NA	NA	NA	NA	NA
+g009480	8.74125874125873e-05	1	0	1	0	Sporulation initiation inhibitor protein Soj	3.6.-.-	K03496	parA, soj; chromosome partitioning protein	NA	NA	NA	NA
+g009481	0.0013986013986014	1	0	0.888888888888889	0	ABC transporter glutamine-binding protein GlnH		K10039	peb1A, glnH; aspartate/glutamate/glutamine transport system substrate-binding protein	NA	NA	path:map02010	ABC transporters
+g009482	0.0113636363636364	1	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g009485	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g009503	0.0192307692307692	0	1	0	0.571428571428571	hypothetical protein			NA	NA	NA	NA	NA
+g009511	0.000874125874125875	1	1	1	0.142857142857143	hypothetical protein			NA	NA	NA	NA	NA
+g009579	0.00480769230769231	0	0	0	0.714285714285714	hypothetical protein			NA	NA	NA	NA	NA
+g009582	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g009660	0.0113636363636364	0	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g009662	0.0113636363636364	0	0	0.666666666666667	0	putative multidrug resistance ABC transporter ATP-binding/permease protein YheH	3.6.3.-	K18890	mdlB, smdB; ATP-binding cassette, subfamily B, multidrug efflux pump	NA	NA	path:map02010	ABC transporters
+g009665	0.0336538461538462	0	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g009667	0.00323426573426573	0	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g009668	0.00323426573426573	0	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g009706	0.00480769230769231	0	0	0	0.714285714285714	Transcriptional regulator MtlR		K03483	mtlR; mannitol operon transcriptional antiterminator	NA	NA	NA	NA
+g009714	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g009716	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g009745	0.000874125874125875	1	1	1	0.142857142857143	hypothetical protein			NA	NA	NA	NA	NA
+g009747	0.000874125874125875	0	0	0	0.857142857142857	AB hydrolase superfamily protein YdjP	3.-.-.-		NA	NA	NA	NA	NA
+g009790	0.000874125874125875	1	1	1	0.142857142857143	hypothetical protein			NA	NA	NA	NA	NA
+g009872	0.00323426573426573	1	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g009885	0.0336538461538462	0	1	0.444444444444444	1	Cardiolipin synthase	2.7.8.-	K06131	clsA_B; cardiolipin synthase A/B [EC:2.7.8.-]	NA	NA	path:map00564	Glycerophospholipid metabolism
+g009890	0.0013986013986014	1	0	0.888888888888889	0	Pantothenate kinase	2.7.1.33	K00867	coaA; type I pantothenate kinase [EC:2.7.1.33]	md:M00120	Coenzyme A biosynthesis, pantothenate => CoA	path:map00770	Pantothenate and CoA biosynthesis
+g009971	0.0113636363636364	1	1	0.333333333333333	1	hypothetical protein			NA	NA	NA	NA	NA
+g010028	0.00323426573426573	1	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g010062	0.0113636363636364	0	1	0.333333333333333	1	hypothetical protein			NA	NA	NA	NA	NA
+g010124	0.0013986013986014	0	0	0.111111111111111	1	hypothetical protein			NA	NA	NA	NA	NA
+g010125	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g010151	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g010154	0.000874125874125875	0	0	0	0.857142857142857	hypothetical protein			NA	NA	NA	NA	NA
+g010158	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g010173	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g010174	0.00323426573426573	1	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g010175	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g010176	0.0336538461538462	1	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g010278	0.0113636363636364	1	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g010279	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g010319	0.00323426573426573	1	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g010343	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g010344	0.00874125874125874	0	0	0.111111111111111	0.857142857142857	hypothetical protein			NA	NA	NA	NA	NA
+g010353	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g010376	0.000874125874125875	0	1	0	0.857142857142857	hypothetical protein			NA	NA	NA	NA	NA
+g010454	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g010460	8.74125874125873e-05	0	1	0	1	2-succinyl-6-hydroxy-2,4-cyclohexadiene-1-carboxylate synthase	4.2.99.20		NA	NA	NA	NA	NA
+g010619	0.0336538461538462	0	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g010620	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g010786	0.00323426573426573	0	1	0.222222222222222	1	2-methoxy-6-polyprenyl-1,4-benzoquinol methylase, mitochondrial	2.1.1.163		NA	NA	NA	NA	NA
+g011050	0.0336538461538462	1	1	0.444444444444444	1	IS110 family transposase ISL4			NA	NA	NA	NA	NA
+g011059	0.0013986013986014	0	1	0.111111111111111	1	putative BsuMI modification methylase subunit YdiO	2.1.1.37	K00558	DNMT1, dcm; DNA (cytosine-5)-methyltransferase 1 [EC:2.1.1.37]	md:M00035	Methionine degradation	path:map00270	Cysteine and methionine metabolism
+g011111	0.000874125874125875	1	1	1	0.142857142857143	hypothetical protein			NA	NA	NA	NA	NA
+g011129	0.0113636363636364	0	0	0.666666666666667	0	Ribitol-5-phosphate cytidylyltransferase	2.7.7.40	K21030	tarI; D-ribitol-5-phosphate cytidylyltransferase [EC:2.7.7.40]	NA	NA	path:map00040	Pentose and glucuronate interconversions
+g011257	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g011553	0.00323426573426573	1	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g011560	0.0113636363636364	0	0	0.666666666666667	0	1-deoxy-D-xylulose-5-phosphate synthase	2.2.1.7	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	md:M00096	C5 isoprenoid biosynthesis, non-mevalonate pathway	path:map00730	Thiamine metabolism
+g011618	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g011620	0.0113636363636364	1	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g011696	8.74125874125873e-05	0	0	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g011717	0.0336538461538462	1	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g011773	0.00323426573426573	1	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g011788	0.0113636363636364	0	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g011790	0.0336538461538462	0	0	0.555555555555556	0	Multidrug export protein MepA		K18908	mepA; multidrug efflux pump	md:M00705	Multidrug resistance, efflux pump MepA	NA	NA
+g011794	0.0013986013986014	0	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g011797	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g011798	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g011846	0.00323426573426573	1	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g011852	0.00323426573426573	1	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g011873	0.000874125874125875	1	1	1	0.142857142857143	Nucleoid-associated protein YbaB			NA	NA	NA	NA	NA
+g011905	0.0113636363636364	1	1	0.333333333333333	1	CTP synthase	6.3.4.2	K01937	pyrG, CTPS; CTP synthase [EC:6.3.4.2]	md:M00052	Pyrimidine ribonucleotide biosynthesis, UMP => UDP/UTP,CDP/CTP	path:map00240	Pyrimidine metabolism
+g011954	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g011961	0.000874125874125875	0	0	0	0.857142857142857	hypothetical protein			NA	NA	NA	NA	NA
+g011984	8.74125874125873e-05	0	0	0	1	Modification methylase DpnIIA	2.1.1.72		NA	NA	NA	NA	NA
+g011998	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g012133	0.0192307692307692	0	0	0	0.571428571428571	DNA gyrase subunit A	5.6.2.2	K02469	gyrA; DNA gyrase subunit A [EC:5.6.2.2]	NA	NA	NA	NA
+g012181	0.0113636363636364	1	1	0.333333333333333	1	Arginine transport ATP-binding protein ArtM		K02028	ABC.PA.A; polar amino acid transport system ATP-binding protein [EC:7.4.2.1]	NA	NA	NA	NA
+g012396	0.000874125874125875	1	1	1	0.142857142857143	PTS system oligo-beta-mannoside-specific EIIC component		K02761	PTS-Cel-EIIC, celB, chbC; PTS system, cellobiose-specific IIC component	NA	NA	path:map00500	Starch and sucrose metabolism
+g012446	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g012505	0.00480769230769231	1	1	1	0.285714285714286	tRNA-Ser(tga)		NA	NA	NA	NA	NA	NA
+g012600	0.0013986013986014	0	0	0.888888888888889	0	Protein LacX, plasmid			NA	NA	NA	NA	NA
+g012602	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g012610	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g012644	8.74125874125873e-05	1	0	1	0	Multidrug resistance protein 3			NA	NA	NA	NA	NA
+g012648	0.0113636363636364	1	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g012687	0.0336538461538462	1	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g012741	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g012745	0.0113636363636364	0	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g012768	0.00323426573426573	0	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g012868	0.00480769230769231	0	0	0	0.714285714285714	hypothetical protein			NA	NA	NA	NA	NA
+g012910	0.0113636363636364	1	1	0.333333333333333	1	hypothetical protein			NA	NA	NA	NA	NA
+g012952	0.0113636363636364	0	0	0.666666666666667	0	Levansucrase	2.4.1.10		NA	NA	NA	NA	NA
+g012953	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g013062	0.00323426573426573	0	1	0.222222222222222	1	hypothetical protein			NA	NA	NA	NA	NA
+g013068	0.00480769230769231	0	0	0	0.714285714285714	hypothetical protein			NA	NA	NA	NA	NA
+g013082	0.0013986013986014	0	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g013128	8.74125874125873e-05	1	0	1	0	HTH-type transcriptional regulator BenM		K21757	benM; LysR family transcriptional regulator, benzoate and cis,cis-muconate-responsive activator of ben and cat genes	NA	NA	NA	NA
+g013133	8.74125874125873e-05	1	0	1	0	DNA topoisomerase 1	5.6.2.1	K03168	topA; DNA topoisomerase I [EC:5.6.2.1]	NA	NA	NA	NA
+g013153	0.00323426573426573	1	0	0.777777777777778	0	Acetyl-S-ACP:malonate ACP transferase	2.3.1.187	K13929	mdcA; malonate decarboxylase alpha subunit [EC:2.3.1.187]	NA	NA	NA	NA
+g013205	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g013239	0.0113636363636364	0	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g013247	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g013281	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g013287	0.0336538461538462	0	0	0.555555555555556	0	L-asparaginase 1	3.5.1.1	K01424	E3.5.1.1, ansA, ansB; L-asparaginase [EC:3.5.1.1]	NA	NA	path:map00250	Alanine, aspartate and glutamate metabolism
+g013294	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g013337	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g013342	0.00323426573426573	0	1	0.222222222222222	1	NAD kinase	2.7.1.23	K00858	ppnK, NADK; NAD+ kinase [EC:2.7.1.23]	NA	NA	path:map00760	Nicotinate and nicotinamide metabolism
+g013375	8.74125874125873e-05	1	0	1	0	Membrane-bound lytic murein transglycosylase F	4.2.2.-		NA	NA	NA	NA	NA
+g013380	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g013385	8.74125874125873e-05	1	0	1	0	Oligopeptide-binding protein OppA		K15580	oppA, mppA; oligopeptide transport system substrate-binding protein	NA	NA	path:map01501	beta-Lactam resistance
+g013462	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g013646	8.74125874125873e-05	0	0	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g013735	0.0013986013986014	0	0	0.888888888888889	0	Lipid II isoglutaminyl synthase (glutamine-hydrolyzing) subunit GatD	6.3.5.13	K07009	gatD; lipid II isoglutaminyl synthase (glutamine-hydrolysing) [EC:6.3.5.13]	NA	NA	path:map00550	Peptidoglycan biosynthesis
+g013736	0.0336538461538462	0	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g013827	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g013845	0.0192307692307692	0	0	0	0.571428571428571	hypothetical protein			NA	NA	NA	NA	NA
+g013931	0.0013986013986014	0	0	0.888888888888889	0	Pyridoxine/pyridoxal/pyridoxamine kinase	2.7.1.35		NA	NA	NA	NA	NA
+g013932	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g014069	0.0192307692307692	1	1	1	0.428571428571429	hypothetical protein			NA	NA	NA	NA	NA
+g014072	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g014099	8.74125874125873e-05	1	0	1	0	Glutathione transport system permease protein GsiD		K13891	gsiD; glutathione transport system permease protein	NA	NA	path:map02010	ABC transporters
+g014476	8.74125874125873e-05	1	0	1	0	3-oxoacyl-[acyl-carrier-protein] synthase 3	2.3.1.180	K00648	fabH; 3-oxoacyl-[acyl-carrier-protein] synthase III [EC:2.3.1.180]	md:M00082	Fatty acid biosynthesis, initiation	path:map00061	Fatty acid biosynthesis
+g014488	0.0013986013986014	1	0	0.888888888888889	0	Biotin transporter BioY		K03523	bioY; biotin transport system substrate-specific component	NA	NA	path:map02010	ABC transporters
+g014519	0.00323426573426573	0	0	0.777777777777778	0	Oligopeptide-binding protein AppA			NA	NA	NA	NA	NA
+g014663	0.0013986013986014	0	0	0.888888888888889	0	putative SapB synthase	2.7.-.-		NA	NA	NA	NA	NA
+g014692	0.0405594405594406	1	1	0.777777777777778	0.142857142857143	hypothetical protein			NA	NA	NA	NA	NA
+g014693	8.74125874125873e-05	0	1	0	1	Sporulation initiation inhibitor protein Soj	3.6.-.-	K03496	parA, soj; chromosome partitioning protein	NA	NA	NA	NA
+g014771	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g014772	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g014781	0.000874125874125875	0	0	0	0.857142857142857	hypothetical protein			NA	NA	NA	NA	NA
+g014881	0.0192307692307692	0	0	0	0.571428571428571	hypothetical protein			NA	NA	NA	NA	NA
+g014954	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g014985	0.0192307692307692	0	0	0	0.571428571428571	hypothetical protein			NA	NA	NA	NA	NA
+g015265	0.0405594405594406	1	0	0.222222222222222	0.857142857142857	hypothetical protein			NA	NA	NA	NA	NA
+g015288	0.0336538461538462	0	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g015303	0.034965034965035	0	1	0.111111111111111	0.714285714285714	hypothetical protein			NA	NA	NA	NA	NA
+g015437	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g015438	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g015445	0.0336538461538462	0	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g015547	0.00323426573426573	0	0	0.777777777777778	0	putative ABC transporter phosphonate/phosphite binding protein PhnD2		K02044	phnD; phosphonate transport system substrate-binding protein	NA	NA	path:map02010	ABC transporters
+g015548	0.0113636363636364	0	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g015632	0.00323426573426573	0	0	0.777777777777778	0	putative transport protein HsrA			NA	NA	NA	NA	NA
+g015639	0.0013986013986014	0	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g015790	8.74125874125873e-05	1	0	1	0	tRNA-Gln(ttg)		NA	NA	NA	NA	NA	NA
+g015792	8.74125874125873e-05	1	0	1	0	Adaptive-response sensory-kinase SasA	2.7.-.-		NA	NA	NA	NA	NA
+g016033	0.0336538461538462	0	1	0.444444444444444	1	hypothetical protein			NA	NA	NA	NA	NA
+g016203	0.0336538461538462	0	0	0.444444444444444	1	hypothetical protein			NA	NA	NA	NA	NA
+g016204	0.0113636363636364	1	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g016212	0.00480769230769231	1	0	1	0.285714285714286	hypothetical protein			NA	NA	NA	NA	NA
+g016240	0.0336538461538462	0	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g016264	0.0013986013986014	0	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g016268	0.00323426573426573	0	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g016276	0.0113636363636364	0	0	0.666666666666667	0	Beta-galactosidase LacZ	3.2.1.23	K12308	bgaB, lacA; beta-galactosidase [EC:3.2.1.23]	NA	NA	path:map00052	Galactose metabolism
+g016277	0.00323426573426573	1	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g016326	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g016459	0.00480769230769231	0	0	0	0.714285714285714	IS110 family transposase ISSsu7			NA	NA	NA	NA	NA
+g016545	0.00323426573426573	0	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g016546	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g016550	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g016551	0.0336538461538462	0	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g016603	0.0336538461538462	1	1	0.444444444444444	1	hypothetical protein			NA	NA	NA	NA	NA
+g016680	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g016709	0.000874125874125875	0	0	0	0.857142857142857	hypothetical protein			NA	NA	NA	NA	NA
+g016857	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g016858	8.74125874125873e-05	0	1	0	1	Serine/threonine exchanger SteT		K03294	TC.APA; basic amino acid/polyamine antiporter, APA family	NA	NA	NA	NA
+g016973	0.0336538461538462	1	1	0.444444444444444	1	hypothetical protein			NA	NA	NA	NA	NA
+g017309	0.00323426573426573	0	1	0.222222222222222	1	hypothetical protein			NA	NA	NA	NA	NA
+g017473	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g017506	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g017557	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g017559	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g017579	8.74125874125873e-05	1	0	1	0	Tyrosine recombinase XerC			NA	NA	NA	NA	NA
+g017671	0.0113636363636364	0	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g017672	0.0013986013986014	0	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g017675	0.0013986013986014	0	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g017678	0.0113636363636364	0	0	0.666666666666667	0	PTS system sorbose-specific EIIB component	2.7.1.206		NA	NA	NA	NA	NA
+g017679	0.0113636363636364	0	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g017704	0.0405594405594406	0	1	0.222222222222222	0.857142857142857	hypothetical protein			NA	NA	NA	NA	NA
+g017760	0.034965034965035	0	1	0.111111111111111	0.714285714285714	hypothetical protein			NA	NA	NA	NA	NA
+g017761	0.00323426573426573	1	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g017762	0.00323426573426573	1	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g017763	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g017764	0.0192307692307692	0	1	0	0.571428571428571	hypothetical protein			NA	NA	NA	NA	NA
+g017777	0.0113636363636364	0	0	0.666666666666667	0	hypothetical protein			NA	NA	NA	NA	NA
+g017789	0.0336538461538462	1	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g017802	0.0113636363636364	0	0	0.666666666666667	0	Oxalyl-CoA decarboxylase	4.1.1.8	K01577	oxc; oxalyl-CoA decarboxylase [EC:4.1.1.8]	NA	NA	path:map00630	Glyoxylate and dicarboxylate metabolism
+g017812	0.034965034965035	0	0	0.111111111111111	0.714285714285714	hypothetical protein			NA	NA	NA	NA	NA
+g017912	0.0013986013986014	0	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g017984	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g018006	0.0113636363636364	1	0	0.666666666666667	0	IS256 family transposase IS1201			NA	NA	NA	NA	NA
+g018007	8.74125874125873e-05	1	0	1	0	IS256 family transposase IS1201			NA	NA	NA	NA	NA
+g018018	8.74125874125873e-05	0	1	0	1	2-oxo-hept-4-ene-1,7-dioate hydratase	4.2.1.163		NA	NA	NA	NA	NA
+g018037	0.0113636363636364	1	0	0.666666666666667	0	IS982 family transposase ISLhe7			NA	NA	NA	NA	NA
+g018040	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g018055	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g018083	0.00323426573426573	1	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g018247	0.0336538461538462	0	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g018321	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g018322	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g018339	0.0013986013986014	1	0	0.888888888888889	0	Malonyl CoA-acyl carrier protein transacylase	2.3.1.39	K00645	fabD, MCAT, MCT1; [acyl-carrier-protein] S-malonyltransferase [EC:2.3.1.39]	md:M00082	Fatty acid biosynthesis, initiation	path:map00061	Fatty acid biosynthesis
+g018362	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g018398	0.00323426573426573	1	0	0.777777777777778	0	HTH-type transcriptional regulator CynR		K11921	cynR; LysR family transcriptional regulator, cyn operon transcriptional activator	NA	NA	NA	NA
+g018431	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g018463	0.00874125874125874	1	0	0.888888888888889	0.142857142857143	hypothetical protein			NA	NA	NA	NA	NA
+g018473	0.000874125874125875	0	1	0	0.857142857142857	hypothetical protein			NA	NA	NA	NA	NA
+g018501	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g018508	0.034965034965035	1	1	0.111111111111111	0.714285714285714	hypothetical protein			NA	NA	NA	NA	NA
+g018509	0.00874125874125874	0	1	0.111111111111111	0.857142857142857	hypothetical protein			NA	NA	NA	NA	NA
+g018514	0.0336538461538462	1	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g018550	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g018551	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g018561	0.0336538461538462	0	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g018562	0.00323426573426573	0	0	0.777777777777778	0	hypothetical protein			NA	NA	NA	NA	NA
+g018583	0.00480769230769231	1	1	1	0.285714285714286	Biotin carboxylase	6.3.4.14	K01961	accC; acetyl-CoA carboxylase, biotin carboxylase subunit [EC:6.4.1.2 6.3.4.14]	md:M00082	Fatty acid biosynthesis, initiation	path:map00061	Fatty acid biosynthesis
+g018620	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g018642	0.000874125874125875	0	1	0	0.857142857142857	Replicative DNA helicase	3.6.4.12	K02314	dnaB; replicative DNA helicase [EC:3.6.4.12]	NA	NA	path:map03030	DNA replication
+g018711	0.0336538461538462	0	0	0.555555555555556	0	DNA-directed RNA polymerase subunit alpha	2.7.7.6	K03040	rpoA; DNA-directed RNA polymerase subunit alpha [EC:2.7.7.6]	NA	NA	path:map03020	RNA polymerase
+g018716	0.0336538461538462	0	0	0.555555555555556	0	hypothetical protein			NA	NA	NA	NA	NA
+g018717	0.0336538461538462	0	0	0.555555555555556	0	Pantothenate kinase	2.7.1.33	K00867	coaA; type I pantothenate kinase [EC:2.7.1.33]	md:M00120	Coenzyme A biosynthesis, pantothenate => CoA	path:map00770	Pantothenate and CoA biosynthesis
+g018739	8.74125874125873e-05	1	0	1	0	tRNA-specific adenosine deaminase	3.5.4.33	K11991	tadA; tRNA(adenine34) deaminase [EC:3.5.4.33]	NA	NA	NA	NA
+g018767	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g018898	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g018994	8.74125874125873e-05	0	1	0	1	IS110 family transposase ISSpn10			NA	NA	NA	NA	NA
+g019002	0.0013986013986014	1	0	0.888888888888889	0	hypothetical protein			NA	NA	NA	NA	NA
+g019128	8.74125874125873e-05	0	0	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g019138	0.000874125874125875	0	0	0	0.857142857142857	hypothetical protein			NA	NA	NA	NA	NA
+g019139	8.74125874125873e-05	0	0	0	1	putative sugar epimerase YhfK	4.-.-.-		NA	NA	NA	NA	NA
+g019140	8.74125874125873e-05	0	0	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g019141	0.0013986013986014	0	1	0.111111111111111	1	hypothetical protein			NA	NA	NA	NA	NA
+g019198	8.74125874125873e-05	0	1	0	1	hypothetical protein			NA	NA	NA	NA	NA
+g019208	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g019209	8.74125874125873e-05	1	0	1	0	hypothetical protein			NA	NA	NA	NA	NA
+g019210	0.00874125874125874	1	1	0.888888888888889	0.142857142857143	hypothetical protein			NA	NA	NA	NA	NA

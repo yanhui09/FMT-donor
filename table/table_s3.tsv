@@ -1,0 +1,14 @@
+Module	P	Adjusted P	Enrichment
+M00008:Entner-Doudoroff pathway, glucose-6P => glyceraldehyde-3P + pyruvate	7.17123076841672e-07	8.91146737596443e-05	Donor2
+M00061:D-Glucuronate degradation, D-glucuronate => pyruvate + D-glyceraldehyde 3P	9.7928212922686e-07	8.91146737596443e-05	Donor2
+M00552:D-galactonate degradation, De Ley-Doudoroff pathway, D-galactonate => glycerate-3P	5.31600724620245e-06	0.000322504439602949	Donor2
+M00078:Heparan sulfate degradation	2.84054233116181e-05	0.00129244676067862	Donor2
+M00700:Multidrug resistance, efflux pump AbcA	7.5024009050624e-05	0.00273087392944271	Donor2
+M00545:Trans-cinnamate degradation, trans-cinnamate => acetyl-CoA	0.000944406273182451	0.0286469902865343	Donor2
+M00154:Cytochrome c oxidase	0.00289190623697974	0.0657908668912891	Donor1
+M00875:Staphyloferrin B biosynthesis, L-serine => staphyloferrin B	0.00289190623697974	0.0657908668912891	Donor1
+M00022:Shikimate pathway, phosphoenolpyruvate + erythrose-4P => chorismate	0.00484394662564945	0.08815982858682	Donor1
+M00024:Phenylalanine biosynthesis, chorismate => phenylalanine	0.00468527043660139	0.08815982858682	Donor1
+M00079:Keratan sulfate degradation	0.00669246170819619	0.0998864709240993	Donor2
+M00086:beta-Oxidation, acyl-CoA synthesis	0.00713474792314995	0.0998864709240993	Donor1
+M00714:Multidrug resistance, efflux pump QacA	0.00619648367442612	0.0998864709240993	Donor1
