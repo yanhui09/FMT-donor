@@ -118,7 +118,7 @@ meta_order$NEC <- factor(meta_order$NEC, levels = c(0,1),labels = c("No","Yes"))
 ha_col = HeatmapAnnotation(NEC=anno_simple(meta_order$NEC, col = c("Yes"="tomato","No"="lightseagreen")),
                            FMT=anno_simple(meta_order$Group,col = c("CON"="orange", "FMT1"="maroon1", "FMT2"="aquamarine3", "DONOR1"="red3", "DONOR2"="darkgreen")))
 
-Hist <- Heatmap(mat_scaled[rownames(tax_heatmap),] , cluster_columns = TRUE, cluster_rows = TRUE,
+Hist <- Heatmap(mat_scaled[rownames(tax_heatmap),] , cluster_columns = FALSE, cluster_rows = TRUE,
                 name="Z-score", col=colorRamp2(c(-2, 0, 2), c("dodgerblue4", "white","deeppink3")),
                 top_annotation = ha_col, left_annotation = ha_row, right_annotation = ha_row_txt,
                 show_row_names = FALSE, show_column_names = FALSE,
