@@ -13,6 +13,10 @@ p_wunifrac_16s2 <- p_wunifrac_16s + labs(tag = "C") + theme(plot.tag.position = 
 p_bray_all2 <- p_bray_all + labs(tag = "D") + theme(plot.tag.position = "topleft")
 # Figure.3E
 p_dbrda2 <- p_dbrda+ labs(tag = "E") + theme(plot.tag.position = "topleft")
+layout_man <- c(
+  area(t = 1, b = 4, l = 1, r = 5),
+  area(t = 1, b = 1, l = 3, r = 5)
+)
 p_dbrda3 <- p_dbrda2 + p_bar  + plot_layout(design = layout_man)
 
 #multi-panel figure
@@ -21,6 +25,6 @@ p_merged <- p_alpha_16s2  + p_alpha_all2 +
 
 p_merged / p_dbrda3
 
-ggsave("figure/figure_3.png", height = 12, width=10)
+ggsave("figure/figure_3.png", height = 14, width=11)
 
 sessionInfo()
