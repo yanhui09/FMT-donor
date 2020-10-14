@@ -1,0 +1,4 @@
+	Weighed Unifac (16S rRNA)	Unweighed Unifac (16S rRNA)	Bray Curtis (Shotgun species)	Binary Jaccard (Shotgun species)	Bray Curtis (Shotgun genus)	Binary Jaccard (Shotgun genus)
+FMT1 vs FMT2	R2= 0.093 , p.adj= 0.092	R2= 0.099 , p.adj= 0.007	R2= 0.13 , p.adj= 0.0045	R2= 0.078 , p.adj= 0.0045	R2= 0.15 , p.adj= 0.01	R2= 0.075 , p.adj= 0.01
+FMT1 vs CON	R2= 0.045 , p.adj= 0.3	R2= 0.23 , p.adj= 0.0015	R2= 0.1 , p.adj= 0.008	R2= 0.062 , p.adj= 0.026	R2= 0.079 , p.adj= 0.082	R2= 0.052 , p.adj= 0.068
+FMT2 vs CON	R2= 0.13 , p.adj= 0.03	R2= 0.34 , p.adj= 0.0015	R2= 0.23 , p.adj= 0.003	R2= 0.13 , p.adj= 0.003	R2= 0.24 , p.adj= 0.003	R2= 0.12 , p.adj= 0.003

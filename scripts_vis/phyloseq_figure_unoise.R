@@ -90,24 +90,6 @@ points = as.data.frame(pcoa$points)
 colnames(points) = c("x", "y", "z")
 eig = pcoa$eig
 points = cbind(points, sub_design[match(rownames(points), rownames(sub_design)),])
-#pairwise adonois
-pairwise_adonis <- function(dis_mat, design, groups){
-  sub_design <- subset(design, Group %in% groups)
-  sub_design$Group <- as.factor(sub_design$Group)
-  dis_mat_f <- dis_mat[rownames(sub_design),rownames(sub_design)]
-  adonis_sub <- adonis(dis_mat_f~Group, data=sub_design, permutations = 999)
-  return(adonis_sub$aov.tab$`Pr(>F)`[1])
-}
-p12 <- pairwise_adonis(disWuf, sub_design, c("FMT1","FMT2"))
-p1C <- pairwise_adonis(disWuf, sub_design, c("FMT1","CON"))
-p2C <- pairwise_adonis(disWuf, sub_design, c("FMT2","CON"))
-
-p_pairwise <- c(p12,p1C, p2C)
-p_pairwise_adj <- p.adjust(p_pairwise,method = "BH")
-p_pairwise_adj <- data.frame(padj=p_pairwise_adj)
-rownames(p_pairwise_adj) <- c("FMT1vsFMT2", "FMT1vsCON", "FMT2vsCON")
-p_pairwise_adj
-
 
 #pairwise adonois R2
 pairwise_adonis_R2 <- function(dis_mat, design, groups){
@@ -193,41 +175,6 @@ points = as.data.frame(pcoa$points)
 colnames(points) = c("x", "y", "z")
 eig = pcoa$eig
 points = cbind(points, sub_design[match(rownames(points), rownames(sub_design)),])
-#pairwise adonois
-pairwise_adonis <- function(dis_mat, design, groups){
-  sub_design <- subset(design, Group %in% groups)
-  sub_design$Group <- as.factor(sub_design$Group)
-  dis_mat_f <- dis_mat[rownames(sub_design),rownames(sub_design)]
-  adonis_sub <- adonis(dis_mat_f~Group, data=sub_design, permutations = 999)
-  return(adonis_sub$aov.tab$`Pr(>F)`[1])
-}
-p12 <- pairwise_adonis(disWuf, sub_design, c("FMT1","FMT2"))
-p1C <- pairwise_adonis(disWuf, sub_design, c("FMT1","CON"))
-p2C <- pairwise_adonis(disWuf, sub_design, c("FMT2","CON"))
-
-p_pairwise <- c(p12,p1C, p2C)
-p_pairwise_adj <- p.adjust(p_pairwise,method = "BH")
-p_pairwise_adj <- data.frame(padj=p_pairwise_adj)
-rownames(p_pairwise_adj) <- c("FMT1vsFMT2", "FMT1vsCON", "FMT2vsCON")
-p_pairwise_adj
-
-
-#pairwise adonois R2
-pairwise_adonis_R2 <- function(dis_mat, design, groups){
-  sub_design <- subset(design, Group %in% groups)
-  sub_design$Group <- as.factor(sub_design$Group)
-  dis_mat_f <- dis_mat[rownames(sub_design),rownames(sub_design)]
-  adonis_sub <- adonis(dis_mat_f~Group, data=sub_design, permutations = 999)
-  return(adonis_sub$aov.tab$R2[1])
-}
-r12 <- pairwise_adonis_R2(disWuf, sub_design, c("FMT1","FMT2"))
-r1C <- pairwise_adonis_R2(disWuf, sub_design, c("FMT1","CON"))
-r2C <- pairwise_adonis_R2(disWuf, sub_design, c("FMT2","CON"))
-r_pairwise <- c(r12,r1C, r2C)
-r_pairwise <- data.frame(padj=r_pairwise)
-rownames(r_pairwise) <- c("FMT1vsFMT2", "FMT1vsCON", "FMT2vsCON")
-r_pairwise
-
 #calculate adonis P
 adonis_sub <- adonis(disWuf~Group, data=sub_design[rownames(disWuf),], permutations = 999)
 adonis_R2 <- adonis_sub$aov.tab$R2
@@ -280,5 +227,6 @@ p_effectsize_unifrac<- tab_f %>%
   theme_classic()+
   mytheme
 p_effectsize_unifrac
+
 
 

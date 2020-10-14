@@ -112,7 +112,7 @@ metawrap quant_bins -b mags -a long_scaffolds.fasta -o QUANT_BINS -t 28 CLEAN_RE
 wait
 
 # 6. functionally annotate bins ; Annotated by KEGG online server Ghostkoala
-metaWRAP annotate_bins -o FUNCT_ANNOT -t 28 -b BIN_REFINEMENT_dRepALL/dRep_compare4/bin_compare_drep/dereplicated_genomes
+metaWRAP annotate_bins -o FUNCT_ANNOT -t 28 -b mags
 
 conda deactivate
 exit
