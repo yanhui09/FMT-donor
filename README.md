@@ -1,5 +1,5 @@
 # FMT-donor
-This is a script repository for data analysis in the  FMT-donor paper, "Donor specific microbiome differences affects fecal microbiota transplantation efficacy on necrotizing enterocolitis in preterm pigs". [bioRxiv link](XXXX)
+This is a script repository for data analysis in the  FMT-donor paper, "Donor specific microbiome affects fecal microbiota transplantation efficacy on necrotizing enterocolitis in preterm pigs". [bioRxiv link](XXXX)
 
 # Directory structure
 .  
