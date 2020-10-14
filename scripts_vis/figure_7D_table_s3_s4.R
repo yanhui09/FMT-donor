@@ -37,7 +37,7 @@ ko2mag_wide <- dcast(ko2mag_long_s_path, path~ mag)
 table(rowSums(ko2mag_wide[,-1])==0)
 rownames(ko2mag_wide) <- ko2mag_wide$path
 ko2mag_wide <- ko2mag_wide[,-1]
-# waiting for coverm result to identify, colonized mags from different donors, mags from different sows
+
 # load list of the .csv files
 dataFiles <- lapply(Sys.glob("data/coverm_genomewide/*.tsv"), function(x) read.table(file=x,sep="\t", header = T))
 name <- list.files("data/coverm_genomewide/", pattern = "*.tsv")
@@ -64,8 +64,6 @@ return(coverage_df)
 }
 
 coverage_df <- ls2df(coverage_list,"Mean")
-# export coverage_df
-write.table(coverage_df,"data/mag_coverage.tsv", sep = "\t", col.names = NA, quote = FALSE)
 breadth_df <- ls2df(breadth_list,"Covered.Fraction")
 # mapping # group the mags according to the breadth, breath> 0.25 will be consider as detected
 mapping <- read.table("data/Metadata.tsv", sep = "\t", header = T, row.names = 1)
@@ -103,7 +101,7 @@ write.table(mags_group,"data/mag_donorSource.tsv", sep="\t", quote = FALSE)
 # only focus the mags in the donors
 mags_group <- mags_group[mags_group$source!="Others",]
 
-######CCA ## model not good
+######CCA 
 library(vegan)
 ko_tab <- t(ko2mag_wide)
 colnames(ko_tab)
@@ -269,8 +267,17 @@ p_dbrda_mag <- ggplot(db_rda.site, aes(CAP1, CAP2)) +
 
 p_dbrda_mag
 ggsave("figure/figure_7D.png", height = 5, width = 6)
+#################################
+#table_s3
 module_out <- subset(p_tab, select = c(koID, p,p_adjusted, enrichment))
 colnames(module_out) <- c("Module", "P", "Adjusted P","Enrichment")
 module_out_f <- module_out[module_out$`Adjusted P`< 0.1,]
 module_out_f <- module_out_f[order(module_out_f$`Adjusted P`),]
 write.table(module_out_f,"table/table_s3.tsv", sep = "\t", row.names = F, quote = F)
+#table_s4
+#M00079 and M00078 level in Donor-specific MAGs and its phylogen
+ko_tab_s <- ko_tab[,c('M00078:Heparan sulfate degradation','M00079:Keratan sulfate degradation')]
+ko_tab_s <- as.data.frame(ko_tab_s)
+ko_tab_s$mag <- rownames(ko_tab_s)
+ko_tab_s_detailed <- merge(ko_tab_s, mags_group, by = "mag")
+write.table(ko_tab_s_detailed, "table/table_s4.tsv", sep = "\t", row.names = FALSE, quote = FALSE)
