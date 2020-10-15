@@ -208,5 +208,5 @@ p_3 <-  tree_lre + labs(tag = "C") + tree_lcr + theme(plot.tag.position = "tople
 (p_1|p_2)/
   p_3
 
-ggsave("figure/figure_5.png", height = 6, width = 10)
+ggsave("figure/figure_5.png", height = 7, width = 11)
 
