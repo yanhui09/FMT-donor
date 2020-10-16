@@ -55,14 +55,14 @@ vamb$type <- rep(deparse(substitute(vamb)), dim(vamb)[1])
 metawrap_50_5$bin <- rownames(metawrap_50_5)
 metawrap_50_5$type <- rep(deparse(substitute(metawrap_50_5)), dim(metawrap_50_5)[1])
 
-bin_tab4 <- rbind.data.frame(metabat2,maxbin2,concoct,mmc_50_5,vamb,metawrap_50_5)
-bin_tab4$strategy <- rep("sinASSsingleBIN",dim(bin_tab4)[1])
+bin_tab2 <- rbind.data.frame(metabat2,maxbin2,concoct,mmc_50_5,vamb,metawrap_50_5)
+bin_tab2$strategy <- rep("sinASSsinBIN",dim(bin_tab2)[1])
 
 
 #########################################################################
 #cobine all tha table
-#bin_tab <- rbind.data.frame(bin_tab1,bin_tab2,bin_tab3,bin_tab4)
-bin_tab <- rbind.data.frame(bin_tab1,bin_tab4)
+#bin_tab <- rbind.data.frame(bin_tab1,bin_tab2)
+bin_tab <- rbind.data.frame(bin_tab1,bin_tab2)
 
 #set completeness 50%, contamination 5% as threshold
 library(dplyr)
@@ -101,9 +101,8 @@ bin_tab$quality <- factor(bin_tab$quality, levels = c("Waste(completeness<50% & 
                                                       "MQ-I(completeness>=50% & contamination<=5%)",
                                                       "HQ-II(completeness>=90% & contamination 5-10%)",
                                                       "HQ-I(completeness>=90% & contamination<=5%)"))
-#rm bin_tab vamb_split
-bin_tab <- subset(bin_tab, strategy!="sinASScoBIN")
-bin_tab$strategy[bin_tab$strategy=="sinASScoBIN(vamb_split)"] <- "sinASScoBIN"
+#ggplot2
+
 p <- ggplot(bin_tab) +
   geom_bar(stat='count', aes(x=type,fill=quality)) +
   facet_wrap(.~ strategy,ncol = 1,scales = 'free_x')+
