@@ -216,7 +216,7 @@ db_rda.site$Genus <- mags_group$genus[index]
 #only keep Lactobacillus
 db_rda.site$Genus <- as.character(db_rda.site$Genus)
 db_rda.site$Genus[db_rda.site$Genus!="Lactobacillus"] <- 'Others'
-db_rda.site$Genus <- factor(db_rda.site$Genus, levels = c('Others','Lactobacillus'))
+db_rda.site$Genus <- factor(db_rda.site$Genus, levels = c('Others','Lactobacillus'), labels = c('Others','Lactobacilli'))
 
 db_rda.spe.core$name <- rownames(db_rda.spe.core)
 # only include M00079 M00078 CAG metabolism
@@ -254,7 +254,7 @@ p_dbrda_mag <- ggplot(db_rda.site, aes(CAP1, CAP2)) +
   theme_classic() +
   mytheme +
   labs(x = rda1_exp, y = rda2_exp) +
-  guides(color=guide_legend(title="MAGs")) +
+  guides(color=guide_legend(title="MAGs"),shape=guide_legend(title="")) +
   geom_vline(xintercept = 0, color = 'gray', size = 0.5) +
   geom_hline(yintercept = 0, color = 'gray', size = 0.5) +
   geom_segment(data = db_rda.env, aes(x = 0, y = 0, xend = CAP1, yend = CAP2), arrow = arrow(length = unit(0.2, 'cm')), size = 0.3, color = 'blue') +
@@ -280,4 +280,11 @@ ko_tab_s <- ko_tab[,c('M00078:Heparan sulfate degradation','M00079:Keratan sulfa
 ko_tab_s <- as.data.frame(ko_tab_s)
 ko_tab_s$mag <- rownames(ko_tab_s)
 ko_tab_s_detailed <- merge(ko_tab_s, mags_group, by = "mag")
+# Add information for breath of coverage
+index <- match(ko_tab_s_detailed$mag, rownames(breadth_df))
+#donor 1 17119-05-40-243200090
+ko_tab_s_detailed$breath_donor1 <- breadth_df$`17119-05-40-243200090`[index]
+#donor 2 17119-05-39-243200084
+ko_tab_s_detailed$breath_donor2 <- breadth_df$`17119-05-39-243200084`[index]
+
 write.table(ko_tab_s_detailed, "table/table_s4.tsv", sep = "\t", row.names = FALSE, quote = FALSE)
