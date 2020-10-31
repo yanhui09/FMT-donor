@@ -2,7 +2,7 @@
 This is a script repository for data analysis in the  FMT-donor paper, "Donor specific microbiome affects fecal microbiota transplantation efficacy on necrotizing enterocolitis in preterm pigs". [bioRxiv link](XXXX)
 
 # Directory structure
-.  
+```  
 ├── data  
 │   ├── BIN_REFINEMENT  
 │   │   ├── coASS  
@@ -15,6 +15,7 @@ This is a script repository for data analysis in the  FMT-donor paper, "Donor sp
 ├── scripts_sequencing  
 ├── scripts_vis  
 └── table  
+```
 
 **data**: metadata, processed output from *script_sequencing*, etc, are used for data visualization, generated tables  
 **figure** generated figures in the paper, *png* file  
