@@ -2,3 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+
+#ignore
+figure/thesis.png
+scripts_vis/thesis.R
