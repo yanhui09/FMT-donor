@@ -25,6 +25,7 @@ p_merged <- p_alpha_16s2  + p_alpha_all2 +
 
 p_merged / p_dbrda3
 
-ggsave("figure/figure_3.png", height = 14, width=11)
+ggsave("figure/figure_3.png", height = 14, width=11, #device=cairo_pdf
+       )
 
 sessionInfo()

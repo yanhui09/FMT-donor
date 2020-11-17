@@ -5,4 +5,5 @@
 
 #ignore
 figure/thesis.png
+figure/*.pdf
 scripts_vis/thesis.R

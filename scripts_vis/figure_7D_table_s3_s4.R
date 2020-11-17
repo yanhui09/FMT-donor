@@ -247,6 +247,12 @@ gg_color_hue <- function(n) {
   hcl(h = hues, l = 65, c = 100)[1:n]
 }
 cols = gg_color_hue(5)
+# combine the db_rda.spe.core and db_rda.env
+db_rda.spe.core.scale <- db_rda.spe.core
+# db_rda.spe.core.scale$CAP1 <- db_rda.spe.core$CAP1*0.1
+# db_rda.spe.core.scale$CAP2 <- db_rda.spe.core$CAP2*0.1
+#     
+# db_rda_tri <- rbind.data.frame(db_rda.env, db_rda.spe.core.scale)
 
 p_dbrda_mag <- ggplot(db_rda.site, aes(CAP1, CAP2)) +
   geom_point(aes(color = source, shape = Genus),size=2) +
@@ -257,16 +263,20 @@ p_dbrda_mag <- ggplot(db_rda.site, aes(CAP1, CAP2)) +
   guides(color=guide_legend(title="MAGs"),shape=guide_legend(title="")) +
   geom_vline(xintercept = 0, color = 'gray', size = 0.5) +
   geom_hline(yintercept = 0, color = 'gray', size = 0.5) +
+  # add site loadings
   geom_segment(data = db_rda.env, aes(x = 0, y = 0, xend = CAP1, yend = CAP2), arrow = arrow(length = unit(0.2, 'cm')), size = 0.3, color = 'blue') +
   geom_text(data = db_rda.env, aes(CAP1 * 2, CAP2 * 1.2, label = name), color = 'blue', size = 3) +
-  geom_text(data = db_rda.spe.core, aes(CAP1*0.1, CAP2*0.1, label=name), color='black', size=3) +
+  # add species loadings
+  geom_segment(data = db_rda.spe.core, aes(x = 0, y = 0, xend = CAP1*0.1, yend = CAP2*0.1), arrow = arrow(length = unit(0.2, 'cm')), size = 0.3, color = 'black') +
+  geom_text(data = db_rda.spe.core, aes(CAP1*0.11, CAP2*0.11, label=name), color='black', size=3) +
   theme(legend.position = "top",
         legend.box="vertical",
         legend.spacing.y = unit(0, 'cm')
         )
 
 p_dbrda_mag
-ggsave("figure/figure_7D.png", height = 5, width = 6)
+ggsave("figure/figure_7D.png", height = 5, width = 6, #device = cairo_pdf
+       )
 #################################
 #table_s3
 module_out <- subset(p_tab, select = c(koID, p,p_adjusted, enrichment))

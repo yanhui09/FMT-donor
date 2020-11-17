@@ -153,14 +153,16 @@ p_dbrda <- ggplot(db_rda.site, aes(CAP1, CAP2)) +
                  ),size=4) +
   scale_color_manual(values = c(cols[1], cols[2], cols[3])) +
   xlim(-1,1.5) +
-  ylim(-0.8,1.2) +
+  ylim(-1,1.2) +
   theme_classic() +
   mytheme +
   labs(x = rda1_exp, y = rda2_exp) +
   guides(color=guide_legend(title="FMT")) +
   geom_vline(xintercept = 0, color = 'gray', size = 0.5) + 
   geom_hline(yintercept = 0, color = 'gray', size = 0.5) +
-  geom_text(data = db_rda.spe.core, aes(CAP1*0.4, CAP2*0.4, label=name), color='black', size=3)
+  geom_segment(data = db_rda.spe.core, aes(x = 0, y = 0, xend = CAP1*0.4, yend = CAP2*0.4), 
+               arrow = arrow(length = unit(0.2, 'cm')), size = 0.3, color = 'blue') +
+  geom_text(data = db_rda.spe.core, aes(CAP1*0.43, CAP2*0.46, label=name), color='black', size=3)
 
 p_dbrda
 
