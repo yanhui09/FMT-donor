@@ -56,7 +56,7 @@ ps.melt_f$NEC <- factor(ps.melt_f$NEC, levels = c(0,1), labels = c("No", "Yes"))
 p_16s_lac_box <-ggplot(data = ps.melt_f, mapping = aes(x=Group, y=Abundance)) +
   stat_boxplot(geom ='errorbar', linetype=1, width=0.5) + 
   geom_boxplot(outlier.shape = NA, aes(fill=Group)) +
-  geom_point(position = position_jitter(w=0.1),size=2, aes(color=NEC)) +
+  geom_point(position = position_jitter(w=0.1, h=0),size=2, aes(color=NEC)) +
   scale_color_manual(values = c("black", "gray")) +
   scale_fill_manual(values = cols)+
   labs(x="", y="Lactobacilli (%)", title = "16S rRNA",color="NEC") +
@@ -100,7 +100,7 @@ stat.test
 p_kaiju_lac_box <-ggplot(data = ps.melt_f, mapping = aes(x=Group, y=Abundance)) +
   stat_boxplot(geom ='errorbar', linetype=1, width=0.5) + 
   geom_boxplot(outlier.shape = NA, aes(fill=Group)) +
-  geom_point(position = position_jitter(w=0.1),size=2, aes(color=NEC)) +
+  geom_point(position = position_jitter(w=0.1, h=0),size=2, aes(color=NEC)) +
   scale_color_manual(values = c("black", "gray")) +
   scale_fill_manual(values = cols)+
   labs(x="", y="Lactobacilli (%)", title = "Shotgun",color="NEC") +
@@ -194,19 +194,20 @@ tree_lcr <- plot_tree(tree = "data/strainphlan/RAxML_bestTree.s__Lactobacillus_c
 # multi-panel figure
 library(patchwork)
 
-p_1 <- p_16s_lac_box + labs(tag = "A") + p_kaiju_lac_box + theme(plot.tag.position = "topleft") +
+p_1 <- p_16s_lac_box + labs(tag = "a") + p_kaiju_lac_box + theme(plot.tag.position = "topleft") +
   plot_layout(guides = "collect")
 
 p_1 <- p_1*theme(axis.text.x.bottom = element_text(angle = 90))
 
 p_2 <- p_species_kaiju_lac*theme(axis.text.x.bottom = element_text(angle = 90)) + 
-  labs(tag = "B") + theme(plot.tag.position = "topleft")
+  labs(tag = "b") + theme(plot.tag.position = "topleft")
 
-p_3 <-  tree_lre + labs(tag = "C") + tree_lcr + theme(plot.tag.position = "topleft") + 
+p_3 <-  tree_lre + labs(tag = "c") + tree_lcr + theme(plot.tag.position = "topleft") + 
   plot_layout(guides = "collect")
 
 (p_1|p_2)/
   p_3
 
 ggsave("figure/figure_5.png", height = 7, width = 11)
+#ggsave("figure/figure_5.pdf", height = 7, width = 11, device = cairo_pdf)
 

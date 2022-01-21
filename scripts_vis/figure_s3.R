@@ -1,307 +1,142 @@
-library(ggradar)
-library(readxl)
-library(dplyr)
-library(scales)
-
 library(ggplot2)
-library(tidyr)
+library(phyloseq)
 library(extrafont)
-library(ggpubr)
+library(vegan)
+library(RColorBrewer)
+library(dplyr)
 loadfonts()
 mytheme<- theme(plot.title = element_text(hjust=0.5, family = "Arial", size=12),
                 legend.position ="right",
-                legend.text = element_text(family = "Arial", size = 8),
+                legend.text = element_text(family = "Arial", size = 10),
                 legend.background = element_blank(),
                 strip.background = element_blank(),
                 strip.placement = "outside",
-                strip.text = element_text(family = "Arial", size = 8),
-                axis.text = element_text(family = 'Arial', size = 8, color="black"),
+                strip.text = element_text(family = "Arial", size = 10),
+                axis.text = element_text(family = 'Arial', size = 10, color="black"),
                 panel.grid = element_blank())
-gg_color_hue <- function(n) {
-  hues = seq(15, 375, length = n + 1)
-  hcl(h = hues, l = 65, c = 100)[1:n]
-}
-cols = gg_color_hue(5)
-#import histological data
-# mapping for sequencing
-mapping <- read.table("data/Metadata.tsv", sep="\t", header = T, row.names = 1)
-head(mapping)
-# input for all the excels
 
-sheets <- excel_sheets("data/phenotype.xlsx")
-sheets
+###########################################Kaiju phylum#####################################
+ps.sample <- readRDS("data/ps_kaiju_nr_phylum.rds")
+ps.sample.rel <- transform_sample_counts(ps.sample, function(x) x/sum(x)*100)
 
-histo <- read_excel("data/phenotype.xlsx",sheet=6)
-clinic <- read_excel("data/phenotype.xlsx",sheet=4)
-histo <- subset(histo, ID %in% mapping$FMT_ID)
-clinic <- subset(clinic, ID %in% mapping$FMT_ID)
-colnames(clinic)
-#NEC
-#############################
-nec_group <- clinic %>%
-  select(Group, NEC, NEC_prox, NEC_mid, NEC_dist, NEC_colon, NEC_stomach) %>%
-  filter(!is.na(NEC)) %>%
-  group_by(Group) %>%
-  summarise_if(is.numeric, mean, na.rm =TRUE ) %>%
-  as.data.frame()
-nec_group
+psdat.gen <- tax_glom(ps.sample.rel, taxrank = "Phylum")
+ps.melt <- psmelt(psdat.gen)
 
-colnames(nec_group) <- c("Group","NEC", "Prox", "Mid", "Dist", "Colon", "Stomach")
-nec_group$Group <- c("CON",  "FMT1", "FMT2")
+# change to character for easy-adjusted level
+ps.melt$Phylum <- as.character(ps.melt$Phylum)
 
-radar_NEC <- nec_group %>%
-  select(-NEC) %>%
-  mutate_each(rescale, -Group) %>%
-  ggradar(plot.title = "NEC", legend.title = "Group",  font.radar = "Arial", group.colours = cols, #, grid.label.size = 5, axis.label.size = 4
-          ) +
-  theme(plot.title = element_text(hjust=0.5, family = "Arial", size = 14),
-        legend.text = element_text(family = "Arial", size = 12),
-        legend.title = element_text(family = "Arial", size = 14),
-        strip.text = element_text(family = "Arial", size = 12, vjust = 1),
-        axis.text = element_text(family = 'Arial', size = 12, color = "black"),
-        plot.tag = element_text(family = "Arial", size = 14),
-        )
-radar_NEC
+ps.melt <- ps.melt %>%
+  group_by(Group, Phylum) %>%
+  mutate(mean=mean(Abundance))
 
-#Diarrhea
-Diarrhea_group <- clinic %>%
-  select(Group,NEC, Feces_d1,Feces_d2, Feces_d3, Feces_d4, Feces_d5) %>%
-  filter(!is.na(NEC)) %>%
-  group_by(Group) %>%
-  summarise_if(is.numeric, mean, na.rm =TRUE ) %>%
-  as.data.frame()
-Diarrhea_group
-
-colnames(Diarrhea_group) <- c("Group","NEC", "D1", "D2", "D3", "D4", "D5")
-Diarrhea_group$Group <- c("CON", "FMT1", "FMT2")
+# select group mean > 1
+keep <- unique(ps.melt$Phylum[ps.melt$mean > 1])
+ps.melt$Phylum[!(ps.melt$Phylum %in% keep)] <- "< 1% mean abund."
+#to get the same rows together
+ps.melt_sum <- ps.melt %>%
+  group_by(Sample,Group,Phylum) %>%
+  summarise(Abundance=sum(Abundance))
 
 
-radar_Diarrhea <- Diarrhea_group %>%
-  select(-NEC) %>%
-  mutate_each(rescale, -Group) %>%
-  ggradar(plot.title = "Diarrhea",legend.title = "Group", font.radar = "Arial", group.colours = cols,#, grid.label.size = 5, axis.label.size = 4
-          ) +
-  theme(plot.title = element_text(hjust=0.5, family = "Arial", size = 14),
-        legend.text = element_text(family = "Arial", size = 12),
-        legend.title = element_text(family = "Arial", size = 14),
-        strip.text = element_text(family = "Arial", size = 12, vjust = 1),
-        axis.text = element_text(family = 'Arial', size = 12, color = "black"),
-        plot.tag = element_text(family = "Arial", size = 14))
-
-radar_Diarrhea
-
-######################################################
-# histology
-index <- match(histo$ID, clinic$ID)
-histo$NEC <- clinic$NEC[index]  
-colnames(histo)
-histo_group <- histo %>%
-  select(Group, NEC,ABPAS_SI_fraction, ABPAS_colon_fraction, CD3_SI_fraction, CD3_colon_fraction, MPO_SI_score, MPO_colon_score,FISH_SI_score) %>%
-  filter(!is.na(NEC)) %>%
-  group_by(Group) %>%
-  summarise_if(is.numeric, mean, na.rm =TRUE ) %>%
-  as.data.frame()
-histo_group
-
-colnames(histo_group) <- c("Group","NEC", "Goblet cell SI", "Goblet cell Colon", "CD3+ cell SI", "CD3+ cell Colon", "MPO score SI", "MPO score Colon", "FISH SI")
-histo_group$Group <- c("CON", "FMT1", "FMT2")
-
-radar_histo <- histo_group %>%
-  select(-NEC) %>%
-  mutate_each(rescale, -Group) %>%
-  ggradar(plot.title = "Histology", legend.title = "Group",  font.radar = "Arial", group.colours = cols#, grid.label.size = 5, axis.label.size = 4
-          ) +
-  theme(plot.title = element_text(hjust=0.5, family = "Arial", size = 14),
-        legend.text = element_text(family = "Arial", size = 12),
-        legend.title = element_text(family = "Arial", size = 14),
-        strip.text = element_text(family = "Arial", size = 12, vjust = 1),
-        axis.text = element_text(family = 'Arial', size = 12, color = "black"),
-        plot.tag = element_text(family = "Arial", size = 14))
-
-radar_histo
+#join all qualitative palettes
+qual_col_pals = brewer.pal.info[brewer.pal.info$category == 'qual',]
+col_vector = unlist(mapply(brewer.pal, qual_col_pals$maxcolors, rownames(qual_col_pals)))
 
 
-# all histological data
-colnames(histo)
-histo_boxplot <- histo %>%
-  select(Group, NEC,ABPAS_SI_fraction, ABPAS_colon_fraction, CD3_SI_fraction, CD3_colon_fraction, MPO_SI_score, MPO_colon_score,FISH_SI_score) %>%
-  filter(!is.na(NEC))
-  
-histo_boxplot$NEC <- factor(histo_boxplot$NEC, levels = c(0,1), labels = c("No","Yes"))
-histo_boxplot$Group <- factor(histo_boxplot$Group, levels = c("CON","NEW","OLD"), labels = c("CON","FMT1","FMT2"))
-colnames(histo_boxplot) <- c("Group","NEC", "Goblet cell SI", "Goblet cell Colon", "CD3+ cell SI", "CD3+ cell Colon", "MPO score SI", "MPO score Colon", "FISH SI")
-#MPO score
-histo_mpo <- histo_boxplot %>%
-  select(Group, NEC, "MPO score SI", "MPO score Colon") %>%
-  gather(Condition, Measurement, 3:4, factor_key = TRUE)
-histo_mpo$Condition <- factor(histo_mpo$Condition, levels = c("MPO score SI", "MPO score Colon"), labels = c("SI","Colon"))
+# Scrren out mean relative abundance for each group
+ps.melt_sum$Group <- factor(ps.melt_sum$Group, levels = c("CON","FMT1","FMT2","DONOR1","DONOR2"))
+p_phylum_shotgun <- ggplot(ps.melt_sum, aes(x = Group, y = Abundance, color = Phylum, fill = Phylum)) + 
+  geom_bar(stat = "summary", position = "stack",aes(fill=Phylum), fun="mean") + 
+  labs(x="") +
+  scale_fill_manual(values = col_vector) +
+  scale_color_manual(values = col_vector) +
+  theme_classic() + 
+  mytheme + 
+  theme(legend.position = "right") +
+  guides(fill=guide_legend(ncol = 3))
+p_phylum_shotgun
 
-p_mpo <- ggplot(data = histo_mpo, aes(x=Condition,y=Measurement,fill=Group)) +
-  stat_boxplot(geom ='errorbar', linetype=1, width=0.25, position = position_dodge(.85)) + 
-  geom_boxplot(position=position_dodge(0.85),outlier.shape = NA) +
-  geom_point(size=2,position = position_jitterdodge(dodge.width = 0.9), aes(color=NEC, group = Group)) +
-  scale_color_manual(values = c("black", "gray")) +
-  scale_fill_manual(values = cols) +
-  labs(x="", y="MPO score", title="MPO score") +
-  theme_classic() +
-  theme(plot.title = element_text(hjust=0.5, family = "Arial", size=14),
-        legend.text = element_text(family = "Arial", size = 12),
-        legend.title = element_text(family = "Arial", size = 14),
-        strip.background = element_blank(),
-        strip.placement = "outside",
-        strip.text = element_text(family = "Arial", size = 12, vjust = 1),
-        axis.text = element_text(family = 'Arial', size = 12, color = "black"),
-        axis.ticks.x = element_blank(),
-        panel.grid = element_blank())
+###################################16s genus#########################
+ps.16s <- readRDS("data/phyloseq_16s.rds")
+# 16s genera
+ps.16s.rel <- transform_sample_counts(ps.16s, function(x) x/sum(x)*100)
+psdat.gen <- tax_glom(ps.16s.rel, taxrank = "Genus")
+ps.melt <- psmelt(psdat.gen)
+# change to charater for easy adjust level
+ps.melt$Genus <- as.character(ps.melt$Genus)
+ps.melt <- ps.melt %>%
+  group_by(Group, Genus) %>%
+  mutate(mean=mean(Abundance))
+# select group mean > 1 genera
+keep <- unique(ps.melt$Genus[ps.melt$mean > 1])
+ps.melt$Genus[!(ps.melt$Genus %in% keep)] <- "< 1% mean abund."
+ps.melt_sum_16s <- ps.melt %>%
+  group_by(Sample,Group,Genus) %>%
+  summarise(Abundance=sum(Abundance))
+#####################################Shotgun genus######################
+ps.sample <- readRDS("data/ps_kaiju_nr_genus.rds")
+ps.shotgun <- ps.sample
+ps.shotgun.rel <- transform_sample_counts(ps.shotgun, function(x) x/sum(x)*100)
+colSums(otu_table(ps.shotgun.rel))
+psdat.gen <- tax_glom(ps.shotgun.rel, taxrank = "Genus")
+ps.melt <- psmelt(psdat.gen)
+#write.table(ps.melt,"data/kaiju_nr_all_melt_unrare_g.tsv", sep = "\t", col.names = NA)
+#ps.melt <- read.table("data/kaiju_nr_all_melt_unrare_g.tsv", sep = "\t", header = T, row.names = 1)
+# change to charater for easy adjust level
+ps.melt$Genus <- as.character(ps.melt$Genus)
 
-p_mpo
+library(dplyr)
+ps.melt <- ps.melt %>%
+  group_by(Group, Genus) %>%
+  mutate(mean=mean(Abundance))
 
-#CD3 density (fraction)
-histo_cd3 <- histo_boxplot %>%
-  select(Group, NEC, "CD3+ cell SI", "CD3+ cell Colon") %>%
-  gather(Condition, Measurement, 3:4, factor_key = TRUE)
-histo_cd3$Condition <- factor(histo_cd3$Condition, levels = c("CD3+ cell SI", "CD3+ cell Colon"), labels = c("SI","Colon"))
+# select group mean > 1 Genus
+keep <- unique(ps.melt$Genus[ps.melt$mean > 1])
+ps.melt$Genus[!(ps.melt$Genus %in% keep)] <- "< 1% mean abund."
+#to get the same rows together
+ps.melt_sum_shotgun <- ps.melt %>%
+  group_by(Sample,Group,Genus) %>%
+  summarise(Abundance=sum(Abundance))
+#######################################find shared genus for coloring
+genus_16s <- as.character(unique(ps.melt_sum_16s$Genus))
+genus_shotgun <- as.character(unique(ps.melt_sum_shotgun$Genus))
+genus_intersect <- intersect(genus_16s,genus_shotgun)
+#reset levels
+ps.melt_sum_16s$Genus <- factor(ps.melt_sum_16s$Genus, levels = c(genus_intersect,genus_16s[! genus_16s %in% genus_intersect]))
+##############plot 16s genus #############################
+# Scrren out mean relative abundance for each group
+ps.melt_sum_16s$Group <- factor(ps.melt_sum_16s$Group, levels = c("CON","FMT1","FMT2","DONOR1","DONOR2"))
+p_genus_16s <- ggplot(ps.melt_sum_16s, aes(x = Group, y = Abundance, color = Genus, fill = Genus)) + 
+  geom_bar(stat = "summary", position = "stack",aes(fill=Genus), fun="mean") + 
+  labs(x="") +
+  scale_fill_manual(values = col_vector) +
+  scale_color_manual(values = col_vector) +
+  theme_classic() + 
+  mytheme + 
+  theme(legend.position = "right") +
+  guides(fill=guide_legend(ncol = 3))
+p_genus_16s  
 
-p_cd3 <- ggplot(data = histo_cd3, aes(x=Condition,y=Measurement,fill=Group)) +
-  stat_boxplot(geom ='errorbar', linetype=1, width=0.25, position = position_dodge(.85)) + 
-  geom_boxplot(position=position_dodge(0.85),outlier.shape = NA) +
-  geom_point(size=2,position = position_jitterdodge(dodge.width = 0.9), aes(color=NEC, group = Group)) +
-  scale_color_manual(values = c("black", "gray")) +
-  scale_fill_manual(values = cols) +
-  labs(x="", y="CD3+ cell density (%)", title="CD3+ cell density") +
-  theme_classic() +
-  theme(plot.title = element_text(hjust=0.5, family = "Arial", size=14),
-        legend.text = element_text(family = "Arial", size = 12),
-        legend.title = element_text(family = "Arial", size = 14),
-        strip.background = element_blank(),
-        strip.placement = "outside",
-        strip.text = element_text(family = "Arial", size = 12, vjust = 1),
-        axis.text = element_text(family = 'Arial', size = 12, color = "black"),
-        axis.ticks.x = element_blank(),
-        panel.grid = element_blank())
+###############plot shotgun genus########################################
+ps.melt_sum_shotgun$Genus <- factor(ps.melt_sum_shotgun$Genus, levels = c(genus_intersect,genus_shotgun[! genus_shotgun %in% genus_intersect]))
 
-p_cd3
+# Scrren out mean relative abundance for each group
+ps.melt_sum_shotgun$Group <- factor(ps.melt_sum_shotgun$Group, levels = c("CON","FMT1","FMT2","DONOR1","DONOR2"))
+p_genus_shotgun <- ggplot(ps.melt_sum_shotgun, aes(x = Group, y = Abundance, color = Genus, fill = Genus)) + 
+  geom_bar(stat = "summary", position = "stack",aes(fill=Genus), fun="mean") + 
+  labs(x="") +
+  scale_fill_manual(values = col_vector) +
+  scale_color_manual(values = col_vector) +
+  theme_classic() + 
+  mytheme + 
+  theme(legend.position = "right") +
+  guides(fill=guide_legend(ncol = 3))
+p_genus_shotgun
 
-#ABPAS density (fraction)
-histo_abpas <- histo_boxplot %>%
-  select(Group, NEC, "Goblet cell SI", "Goblet cell Colon") %>%
-  gather(Condition, Measurement, 3:4, factor_key = TRUE)
-histo_abpas$Condition <- factor(histo_abpas$Condition, levels = c("Goblet cell SI", "Goblet cell Colon"), labels = c("SI","Colon"))
-
-p_abpas <- ggplot(data = histo_abpas, aes(x=Condition,y=Measurement,fill=Group)) +
-  stat_boxplot(geom ='errorbar', linetype=1, width=0.25, position = position_dodge(.85)) + 
-  geom_boxplot(position=position_dodge(0.85),outlier.shape = NA) +
-  geom_point(size=2,position = position_jitterdodge(dodge.width = 0.9), aes(color=NEC, group = Group)) +
-  scale_color_manual(values = c("black", "gray")) +
-  scale_fill_manual(values = cols) +
-  labs(x="", y="Goblet cell density (%)", title="Goblet cell density") +
-  theme_classic() +
-  theme(plot.title = element_text(hjust=0.5, family = "Arial", size=14),
-        legend.text = element_text(family = "Arial", size = 12),
-        legend.title = element_text(family = "Arial", size = 14),
-        strip.background = element_blank(),
-        strip.placement = "outside",
-        strip.text = element_text(family = "Arial", size = 12, vjust = 1),
-        axis.text = element_text(family = 'Arial', size = 12, color = "black"),
-        axis.ticks.x = element_blank(),
-        panel.grid = element_blank())
-
-p_abpas
-
-
-#Fish colon is missing
-histo_fish <- histo_boxplot %>%
-  select(Group, NEC, "FISH SI") %>%
-  gather(Condition, Measurement, 3, factor_key = TRUE)
-histo_fish$Condition <- factor(histo_fish$Condition, levels = c("FISH SI"), labels = c("SI"))
-
-p_fish <- ggplot(data = histo_fish, aes(x=Condition,y=Measurement,fill=Group)) +
-  stat_boxplot(geom ='errorbar', linetype=1, width=0.25, position = position_dodge(.85)) + 
-  geom_boxplot(position=position_dodge(0.85),outlier.shape = NA) +
-  geom_point(size=2,position = position_jitterdodge(dodge.width = 0.9), aes(color=NEC, group = Group)) +
-  scale_color_manual(values = c("black", "gray")) +
-  scale_fill_manual(values = cols) +
-  labs(x="", y="FISH score", title="FISH score") +
-  theme_classic() +
-  theme(plot.title = element_text(hjust=0.5, family = "Arial", size=14),
-        legend.text = element_text(family = "Arial", size = 12),
-        legend.title = element_text(family = "Arial", size = 14),
-        strip.background = element_blank(),
-        strip.placement = "outside",
-        strip.text = element_text(family = "Arial", size = 12, vjust = 1),
-        axis.text = element_text(family = 'Arial', size = 12, color = "black"),
-        axis.ticks.x = element_blank(),
-        panel.grid = element_blank())
-
-p_fish
-
-######################################################################################
-#nec correlation and histology
-NEC_tab <- clinic %>%
-  select(ID, NEC, NEC_max, NEC_severity)
-
-
-histo_tab <- histo %>%
-  select(ID,  ABPAS_SI_fraction, ABPAS_colon_fraction, MPO_SI_score, MPO_colon_score,CD3_SI_fraction, CD3_colon_fraction,MPO_SI_score,MPO_colon_score,FISH_SI_score)
-
-tab <- merge(NEC_tab, histo_tab, by="ID")
-# add group information
-index <- match(tab$ID, mapping$FMT_ID)
-tab$Group <- as.character(mapping$Group[index])
-
-tab <- tab %>%
-  filter(ID %in% mapping$FMT_ID)
-colnames(tab)
-
-#transform to long-format
-tab_long <- tab %>%
-  gather(histo_category,x, 5:11, factor_key = TRUE) %>%
-  gather(nec_category,y,3:4, factor_key = TRUE) %>%
-  group_by(nec_category,histo_category) %>%
-  mutate_each(rescale,-c(ID, NEC,Group))
-
-#Rename facet labels
-tab_long$NEC <- factor(tab_long$NEC, levels = c(0,1), labels = c("No","Yes"))
-tab_long$Group <- factor(tab_long$Group, levels = c("CON","FMT1","FMT2"), labels = c("CON","FMT1","FMT2"))
-tab_long$nec_category <- factor(tab_long$nec_category, levels = c("NEC_severity", "NEC_max"), labels = c("NEC severity", "NEC max"))
-tab_long$histo_category <- factor(tab_long$histo_category, levels = c("ABPAS_SI_fraction","ABPAS_colon_fraction","CD3_SI_fraction", "CD3_colon_fraction", "MPO_SI_score", "MPO_colon_score", "FISH_SI_score"),
-                                  labels = c("Goblet cell density SI", "Goblet cell density Colon", "CD3+ cell density SI", "CD3+ cell density Colon", "MPO score SI", "MPO score Colon", "FISH score SI"))
-#exclude the goblet cell density
-tab_long_f <- subset(tab_long, !histo_category %in% c("Goblet cell density SI","Goblet cell density Colon"))
-library(ggpmisc)
-myformula <- y ~ x
-p_lm <- ggplot(tab_long_f, aes(y=y, x=x)) +
-  geom_jitter(size=2, aes(color=Group, shape=NEC)) +
-  #add linear regression
-  stat_smooth(method = 'lm',formula = myformula, color="black") +
-  stat_poly_eq(aes(label = paste(..eq.label.., ..rr.label.., ..p.value.label.., sep = "*`,`~")), size=rel(2.5), coef.digits = 2, rr.digits = 2, p.digits = 2,
-               formula = myformula, parse = TRUE)  +
-  facet_grid(nec_category ~ histo_category) +
-  scale_color_manual(values = cols) +
-  scale_y_continuous(breaks=c(0,0.5,1)) +
-  scale_x_continuous(breaks=c(0,0.5,1)) +
-  labs(x="Scaled histological data", y="Scaled NEC scores", title="") +
-  theme_classic() +
-  theme(plot.title = element_text(hjust=0.5, family = "Arial", size=14),
-        legend.text = element_text(family = "Arial", size = 12),
-        legend.title = element_text(family = "Arial", size = 14),
-        strip.background = element_blank(),
-        strip.placement = "outside",
-        strip.text = element_text(family = "Arial", size = 12, vjust = 1),
-        axis.text = element_text(family = 'Arial', size = 12, color = "black"),
-        axis.ticks.x = element_blank(),
-        panel.grid = element_blank())
-
-p_lm  
-
+#########multi-panel figure using patchwork
 library(patchwork)
-q_1 <- (radar_NEC + radar_Diarrhea) + plot_layout(guides = "collect")
-q_1
+p_merged_2 <- (p_phylum_shotgun / p_genus_16s / p_genus_shotgun) & theme(legend.justification = "left")
+p_merged_2 + plot_annotation(tag_levels = 'a') 
+ggsave("figure/figure_s3.png", height = 8, width = 11)
 
-q_2 <- (p_abpas +  p_cd3) / (p_mpo + (p_fish + plot_spacer())) + plot_layout(guides = "collect")
-q_2
-
-q <- q_1 / q_2 / p_lm + plot_annotation(tag_levels = "A")
-q
-
-ggsave("figure/figure_s3.png", height = 12, width = 14)
+sessionInfo()

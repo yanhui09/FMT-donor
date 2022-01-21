@@ -62,7 +62,7 @@ cols = gg_color_hue(5)
 p_alpha_all <- ggplot(tab_long, aes(x= Group, y= Abundance)) +
   stat_boxplot(geom ='errorbar', linetype=1, width=0.5) + 
   geom_boxplot(outlier.shape = NA, aes(fill=Group)) +
-  geom_point(position = position_jitter(w=0.1),size=2, aes(color=NEC)) +
+  geom_point(position = position_jitter(w=0.1, h=0),size=2, aes(color=NEC)) +
   scale_color_manual(values = c("black", "gray")) +
   scale_fill_manual(values = cols) +
   labs(x="", y="Shannon index", title="Shotgun") +

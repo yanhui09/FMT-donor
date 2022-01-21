@@ -1,14 +1,310 @@
-Module	P	Adjusted P	Enrichment
-M00008:Entner-Doudoroff pathway, glucose-6P => glyceraldehyde-3P + pyruvate	7.17123076841672e-07	8.91146737596443e-05	Donor2
-M00061:D-Glucuronate degradation, D-glucuronate => pyruvate + D-glyceraldehyde 3P	9.7928212922686e-07	8.91146737596443e-05	Donor2
-M00552:D-galactonate degradation, De Ley-Doudoroff pathway, D-galactonate => glycerate-3P	5.31600724620245e-06	0.000322504439602949	Donor2
-M00078:Heparan sulfate degradation	2.84054233116181e-05	0.00129244676067862	Donor2
-M00700:Multidrug resistance, efflux pump AbcA	7.5024009050624e-05	0.00273087392944271	Donor2
-M00545:Trans-cinnamate degradation, trans-cinnamate => acetyl-CoA	0.000944406273182451	0.0286469902865343	Donor2
-M00154:Cytochrome c oxidase	0.00289190623697974	0.0657908668912891	Donor1
-M00875:Staphyloferrin B biosynthesis, L-serine => staphyloferrin B	0.00289190623697974	0.0657908668912891	Donor1
-M00022:Shikimate pathway, phosphoenolpyruvate + erythrose-4P => chorismate	0.00484394662564945	0.08815982858682	Donor1
-M00024:Phenylalanine biosynthesis, chorismate => phenylalanine	0.00468527043660139	0.08815982858682	Donor1
-M00079:Keratan sulfate degradation	0.00669246170819619	0.0998864709240993	Donor2
-M00086:beta-Oxidation, acyl-CoA synthesis	0.00713474792314995	0.0998864709240993	Donor1
-M00714:Multidrug resistance, efflux pump QacA	0.00619648367442612	0.0998864709240993	Donor1
+mag	M00078:Heparan sulfate degradation	M00079:Keratan sulfate degradation	source	genus	species	breath_donor1	breath_donor2
+bin_100	0	2	Donors shared	Ruthenibacterium	Ruthenibacterium lactatiformans OX=1550024 	0.60852164	0.8068726
+bin_101	0	0	Donor1 specific	Lactobacillus	Lactobacillus equicursoris DSM 19284 = JCM 14600 = CIP 110162 OX=1293597 	0.9973798	0.035079148
+bin_102	1	2	Donors shared	Porphyromonadaceae	Porphyromonadaceae bacterium OX=2049046 	0.9966632	0.9973643
+bin_103	0	0	Donor2 specific	Gardnerella	Gardnerella vaginalis OX=2702 	0.18376312	0.9184459
+bin_104	0	0	Donor2 specific	Lactobacillus	Lactobacillus reuteri (strain ATCC 53608) OX=927703 	0.08581011	0.58533216
+bin_105	0	0	Donor1 specific	Rothia	Rothia nasimurium OX=85336 	0.5093012	0.027357152
+bin_106	1	1	Donors shared	Clostridiales	Clostridiales bacterium OX=1898207 	0.9968452	0.798613
+bin_107	1	5	Donor2 specific	Lachnospiraceae	Lachnospiraceae bacterium OX=1898203 	0.34541765	0.99889416
+bin_108	0	0	Donor1 specific	Bifidobacterium	Bifidobacterium thermacidophilum subsp. porcinum OX=212365 	0.99651104	0.24490616
+bin_110	2	8	Donor2 specific	Bacteroides	Bacteroides vulgatus OX=821 	0.46308026	0.82571995
+bin_113	0	0	Donors shared	Actinobacillus	Actinobacillus porcinus OX=51048 	0.997872	0.77868366
+bin_115	0	0	Donors shared	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.9914952	0.7480115
+bin_116	0	0	Donor1 specific	Bifidobacterium	Bifidobacterium thermophilum OX=33905 	0.99737257	0.19938341
+bin_117	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.7395441	0.7831746
+bin_121	0	2	Donor1 specific	Verrucomicrobia	Verrucomicrobia bacterium OX=2026799 	0.99890757	0.13774331
+bin_122	0	0	Donors shared	Firmicutes	Tyzzerella sp. OX=2053632 	0.9921701	0.8829544
+bin_126	0	0	Donors shared	Veillonella	Veillonella tobetsuensis OX=1110546 	0.76450694	0.91006196
+bin_128	1	1	Donors shared	Clostridiales	Clostridiales bacterium OX=1898207 	0.95497197	0.9965033
+bin_135	0	0	Donor1 specific	Rothia	Rothia nasimurium OX=85336 	0.82719845	0.12426713
+bin_136	0	0	Donors shared	Porphyromonadaceae	Porphyromonadaceae bacterium OX=2049046 	0.94763964	0.9991527
+bin_140	0	0	Donors shared	Lachnospiraceae	Lachnospiraceae bacterium OX=1898203 	0.578447	0.99927205
+bin_142	0	0	Donor1 specific	Lactobacillus	Lactobacillus equicursoris DSM 19284 = JCM 14600 = CIP 110162 OX=1293597 	0.99867296	0.03519571
+bin_145	0	0	Donors shared	Lactobacillus	Lactobacillus amylovorus OX=1604 	0.80802333	0.99848425
+bin_147	0	0	Donors shared	Clostridiales	Clostridiales bacterium OX=1898207 	0.999805	0.94516873
+bin_149	0	0	Donors shared	Clostridia	Clostridia bacterium OX=2044939 	0.9010397	0.9978272
+bin_150	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.7806354	0.88532645
+bin_151	0	0	Donor1 specific	Firmicutes	Firmicutes bacterium CAG:555 OX=1263030 	0.9980089	0.08823489
+bin_153	0	0	Donors shared	Phascolarctobacterium	Phascolarctobacterium succinatutens YIT 12067 OX=626939 	0.99882424	0.99325544
+bin_155	0	4	Donor2 specific	Bacteroides	Bacteroides uniformis OX=820 	0.17447972	0.8150767
+bin_158	0	0	Donors shared	Phascolarctobacterium	Phascolarctobacterium succinatutens YIT 12067 OX=626939 	0.9821149	0.99858576
+bin_159	0	0	Donors shared	Ruminococcaceae	Ruminococcaceae bacterium D16 OX=552398 	0.97643846	0.5761276
+bin_16	0	0	Donors shared	Veillonella	Veillonella tobetsuensis OX=1110546 	0.995046	0.5640399
+bin_161	0	0	Donors shared	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.7980655	0.89793557
+bin_162	0	0	Donor1 specific	Veillonella	Veillonella criceti OX=103891 	0.79635733	0.080577895
+bin_163	0	1	Donors shared	Clostridiales	Clostridiales bacterium OX=1898207 	0.9993313	0.9297186
+bin_165	0	0	Donors shared	methanogenic	Methanomassiliicoccales archaeon RumEn M2 OX=1713725 	0.97646636	0.92269665
+bin_169	0	0	Donor1 specific	Lactobacillus	Lactobacillus mucosae OX=97478 	0.9825476	0.019533398
+bin_17	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.7904859	0.88954914
+bin_172	0	0	Donor1 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.9476507	0.35526162
+bin_173	0	0	Donors shared	Blautia	uncultured Blautia sp. OX=765821 	0.7991733	0.81503147
+bin_175	0	0	Donor1 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.94845766	0.3624117
+bin_176	0	0	Donors shared	Dorea	Dorea longicatena OX=88431 	0.9621846	0.996859
+bin_177	0	0	Donor1 specific	Ruminococcaceae	Ruminococcaceae bacterium OX=1898205 	0.99953544	0.3043606
+bin_178	7	7	Donor2 specific	Alistipes	Alistipes timonensis JC136 OX=1033731 	0.33556414	0.99957204
+bin_181	0	0	Donors shared	Planctomycetaceae	Planctomycetaceae bacterium OX=2026779 	0.9663232	0.9941197
+bin_183	0	2	Donor2 specific	Bacteroides	Bacteroides uniformis OX=820 	0.19118883	0.5667702
+bin_187	0	0	Donors shared	Clostridiales	Clostridiales bacterium OX=1898207 	0.9981565	0.8692413
+bin_188	0	0	Donor1 specific	Bifidobacterium	Bifidobacterium pseudolongum subsp. pseudolongum OX=31954 	0.9087399	0.10769821
+bin_19	0	0	Donor2 specific	Veillonella	Veillonella criceti OX=103891 	0.023399297	0.84830797
+bin_190	0	0	Donors shared	Clostridium	Clostridium sp. CAG:1024 OX=1262770 	0.9841738	0.99848765
+bin_192	0	0	Donors shared	Corynebacterium	Corynebacterium sp. DNF00584 OX=1384076 	0.7638045	0.56520957
+bin_193	0	0	Donors shared	Firmicutes	Oscillibacter sp. OX=1945593 	0.9999273	0.9294013
+bin_194	0	0	Donors shared	Escherichia	Escherichia coli OX=562 	0.80309266	0.7966597
+bin_195	2	0	Donors shared	Ruthenibacterium	Ruthenibacterium lactatiformans OX=1550024 	0.6044077	0.98577535
+bin_196	0	3	Donors shared	uncultured	uncultured Clostridium sp. OX=59620 	0.70456237	0.8919136
+bin_2	0	0	Donors shared	Dorea	Dorea sp. CAG:317 OX=1262873 	0.7482483	0.8319659
+bin_200	0	0	Donors shared	Veillonella	Veillonella tobetsuensis OX=1110546 	0.9881617	0.6543519
+bin_203	0	0	Donors shared	Clostridiales	Clostridiales bacterium OX=1898207 	0.9980027	0.94581825
+bin_205	0	0	Donors shared	Blautia	Blautia sp. CAG:257 OX=1262756 	0.84843785	0.9824837
+bin_208	0	1	Donor1 specific	Prevotella	Prevotella sp. CAG:873 OX=1262936 	0.99931747	0.034119494
+bin_209	0	0	Donors shared	Bilophila	Bilophila wadsworthia 3_1_6 OX=563192 	0.9104739	0.99902683
+bin_21	2	9	Donor2 specific	Bacteroides	Bacteroides vulgatus OX=821 	0.39927948	0.9157712
+bin_211	0	0	Donors shared	Lactobacillus	Lactobacillus reuteri OX=1598 	0.67474633	0.9270331
+bin_214	0	1	Donors shared	Clostridiales	Clostridiales bacterium OX=1898207 	0.9994954	0.9589737
+bin_215	0	0	Donor2 specific	Elusimicrobium	Elusimicrobium minutum (strain Pei191) OX=445932 	0.43377596	0.9994556
+bin_216	0	0	Donors shared	Clostridium	Clostridium clostridioforme CAG:511 OX=1263066 	0.7118138	0.81791645
+bin_218	0	0	Donors shared	Clostridia	Clostridia bacterium OX=2044939 	0.9972351	0.97264177
+bin_221	0	0	Donor2 specific	Anaerococcus	Anaerococcus prevotii (strain ATCC 9321 / DSM 20548 / JCM 6508 / PC1) OX=525919 	0.22485542	0.50424683
+bin_222	0	0	Donor1 specific	Evtepia	Evtepia gabavorous OX=2211183 	0.9996422	0.24775974
+bin_223	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.7786303	0.87492293
+bin_224	0	1	Donor1 specific	Ruminococcaceae	Ruminococcaceae bacterium OX=1898205 	0.9998434	0.20886207
+bin_226	3	8	Donor2 specific	Alistipes	Alistipes finegoldii (strain DSM 17242 / JCM 16770 / AHN 2437 / CCUG 46020 / CIP 107999) OX=679935 	0.23621143	0.58943146
+bin_227	0	0	Donors shared	Escherichia	Escherichia coli OX=562 	0.79955286	0.79211575
+bin_228	0	0	Donors shared	Firmicutes	Clostridiales bacterium OX=1898207 	0.98124826	0.9981881
+bin_230	0	0	Donors shared	Lactobacillus	Lactobacillus amylovorus OX=1604 	0.8320331	0.9988095
+bin_231	0	2	Donor2 specific	Ruminococcaceae	Ruminococcaceae bacterium OX=1898205 	0.09179216	0.6988196
+bin_232	0	0	Donor1 specific	Ruminococcus	Ruminococcus sp. OX=41978 	0.99965876	0.42851183
+bin_233	0	6	Donor1 specific	Alistipes	Alistipes sp. 3BBH6 OX=2585117 	0.99990976	0.19746597
+bin_234	0	0	Donors shared	Methanomethylophilus	Methanomethylophilus alvus (strain Mx1201) OX=1236689 	0.96531266	0.93455994
+bin_235	2	2	Donors shared	Muribaculaceae	Porphyromonadaceae bacterium OX=2049046 	0.97476715	0.99956256
+bin_236	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.7803952	0.778044
+bin_239	1	1	Donors shared	Porphyromonadaceae	Porphyromonadaceae bacterium OX=2049046 	0.9984874	0.8015638
+bin_240	0	0	Donors shared	Lactobacillus	Lactobacillus pontis OX=35787 	0.6080712	0.9543663
+bin_241	0	0	Donors shared	Clostridiales	Clostridiales bacterium OX=1898207 	0.99953985	0.55597246
+bin_243	0	0	Donor1 specific	Bifidobacterium	Bifidobacterium boum OX=78343 	0.97132343	0.141824
+bin_244	0	2	Donor1 specific	Bacteroides	Bacteroides sp. CAG:709 OX=1262748 	0.99932426	0.12459401
+bin_245	0	0	Donor2 specific	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.13538103	0.9855596
+bin_246	0	0	Donor2 specific	Veillonella	Veillonella criceti OX=103891 	0.02269351	0.73487866
+bin_247	2	1	Donor2 specific	Prevotella	Prevotella sp. CAG:873 OX=1262936 	0.28088254	0.99949014
+bin_249	0	0	Donor2 specific	Lactobacillus	Lactobacillus reuteri OX=1598 	0.13999663	0.98086685
+bin_25	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.75998855	0.75698227
+bin_250	0	0	Donor2 specific	Lactobacillus	Lactobacillus reuteri OX=1598 	0.16946937	0.9787513
+bin_253	1	0	Donor2 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.41518632	0.8491804
+bin_254	0	0	Donors shared	Clostridiales	Clostridiales bacterium OX=1898207 	0.7115875	0.99933517
+bin_255	0	0	Donor1 specific	Bacteroides	Bacteroides sp. 43_108 OX=1896974 	0.9989172	0.19829583
+bin_257	0	0	Donor2 specific	uncultured	uncultured Eubacterium sp. OX=165185 	0.12270798	0.9994943
+bin_258	0	0	Donor1 specific	Rothia	Rothia nasimurium OX=85336 	0.63163346	0.10374882
+bin_259	1	0	Donors shared	Ruminococcaceae	Ruminococcaceae bacterium D16 OX=552398 	0.81832147	0.7836861
+bin_26	0	1	Donors shared	Clostridiales	Clostridiales bacterium OX=1898207 	0.94838434	0.9978695
+bin_267	0	0	Donor1 specific	Rothia	Rothia nasimurium OX=85336 	0.7939745	0.12010375
+bin_269	0	0	Donor1 specific	Alphaproteobacteria	Alphaproteobacteria bacterium OX=1913988 	0.9991331	0.11176361
+bin_27	0	0	Donor2 specific	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.12586637	0.98604864
+bin_270	0	1	Donor2 specific	Subdoligranulum	Subdoligranulum variabile DSM 15176 OX=411471 	0.18899883	0.99923676
+bin_271	1	3	Donor1 specific	Bacteroides	Porphyromonadaceae bacterium OX=2049046 	0.9998202	0.0485669
+bin_277	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.9317339	0.73443145
+bin_278	0	0	Donor1 specific	Rothia	Rothia nasimurium OX=85336 	0.6771305	0.111534275
+bin_28	0	0	Donors shared	methanogenic	methanogenic archaeon mixed culture ISO4-G1 OX=1452364 	0.9991364	0.6532638
+bin_281	0	0	Donors shared	Clostridium	Clostridium clostridioforme CAG:511 OX=1263066 	0.7218492	0.91966903
+bin_285	0	0	Donors shared	Collinsella	Collinsella sp. OX=1965294 	0.7579128	0.7817652
+bin_286	0	0	Donors shared	Clostridiales	Clostridiales bacterium OX=1898207 	0.99679536	0.9095352
+bin_287	0	0	Donors shared	Collinsella	Collinsella sp. OX=1965294 	0.72449213	0.73821074
+bin_289	0	3	Donors shared	Bacteroides	Bacteroides sp. CAG:709 OX=1262748 	0.9975212	0.9972721
+bin_29	0	0	Donor1 specific	Rothia	Rothia nasimurium OX=85336 	0.61907536	0.033067744
+bin_290	0	0	Donors shared	Lactobacillus	Lactobacillus amylovorus OX=1604 	0.9454344	0.77816975
+bin_291	0	0	Donor1 specific	Collinsella	Collinsella sp. OX=1965294 	0.9866007	0.40894538
+bin_292	0	0	Donors shared	Ruminococcaceae	Ruminococcaceae bacterium OX=1898205 	0.8775669	0.9988678
+bin_293	0	0	Donors shared	Lactobacillus	Lactobacillus reuteri OX=1598 	0.8478993	0.7723478
+bin_294	0	0	Donors shared	Clostridium	Clostridium scindens (strain ATCC 35704 / DSM 5676 / VPI 13733 / 19) OX=411468 	0.63480306	0.67693144
+bin_295	0	0	Donors shared	Firmicutes	Tyzzerella sp. OX=2053632 	0.5507201	0.9908324
+bin_297	0	0	Donor2 specific	Lactobacillus	Lactobacillus reuteri (strain ATCC 53608) OX=927703 	0.091116175	0.6587491
+bin_298	0	0	Donors shared	Veillonella	Veillonella tobetsuensis OX=1110546 	0.71245027	0.9909467
+bin_3	0	0	Donors shared	Firmicutes	Firmicutes bacterium CAG:176_63_11 OX=1897031 	0.9954751	0.9994595
+bin_30	0	0	Donors shared	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.73160535	0.90755254
+bin_302	0	0	Donors shared	methanogenic	Methanomassiliicoccales archaeon RumEn M2 OX=1713725 	0.9268144	0.97846156
+bin_303	0	3	Donors shared	Clostridium	Clostridium perfringens OX=1502 	0.88935286	0.5794237
+bin_308	0	0	Donor1 specific	Desulfovibrio	Desulfovibrio piger ATCC 29098 OX=411464 	0.9989088	0.2762576
+bin_309	0	0	Donors shared	Veillonella	Veillonella tobetsuensis OX=1110546 	0.9741312	0.59984785
+bin_310	0	0	Donor1 specific	Lachnospiraceae	Lachnospiraceae bacterium OX=1898203 	0.9962998	0.024028383
+bin_311	0	0	Donors shared	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.989702	0.7961071
+bin_314	0	0	Donors shared	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.77417076	0.9075121
+bin_32	0	0	Donors shared	Clostridiales	Clostridiales bacterium OX=1898207 	0.859599	0.99865186
+bin_321	1	0	Donor2 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.4115884	0.8530751
+bin_322	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.871342	0.8738515
+bin_323	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.8824675	0.7574902
+bin_324	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.77457225	0.87274647
+bin_325	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.92779213	0.73050994
+bin_327	0	0	Donors shared	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.7429056	0.9166109
+bin_33	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.8824357	0.72996056
+bin_334	0	2	Donor2 specific	Ruminococcaceae	Ruminococcaceae bacterium OX=1898205 	0.0805382	0.69411063
+bin_336	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.8767448	0.7135085
+bin_337	1	0	Donor2 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.41909102	0.8546541
+bin_338	1	0	Donor2 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.41244438	0.85361075
+bin_342	0	0	Donors shared	Clostridium	Clostridium clostridioforme CAG:511 OX=1263066 	0.7475761	0.92489254
+bin_344	1	0	Donor2 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.4164248	0.8490519
+bin_345	0	0	Donor1 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.94579846	0.35355473
+bin_348	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.87787145	0.7566977
+bin_349	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.9355576	0.7383838
+bin_350	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.8916278	0.84948206
+bin_351	1	0	Donor2 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.40354973	0.84557986
+bin_353	0	0	Donors shared	Lactobacillus	Lactobacillus amylovorus OX=1604 	0.9692707	0.8777464
+bin_354	0	0	Donors shared	Mogibacterium	Mogibacterium diversum OX=114527 	0.9761143	0.9955445
+bin_356	0	0	Donors shared	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.77433103	0.9068678
+bin_357	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.8938944	0.9446245
+bin_358	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.94040793	0.739384
+bin_359	0	0	Donors shared	Lactobacillus	Lactobacillus amylovorus OX=1604 	0.83480895	0.9943192
+bin_36	0	0	Donor1 specific	Blautia	uncultured Ruminococcus sp. OX=165186 	0.50318116	0.47783932
+bin_360	0	0	Donor1 specific	Bifidobacterium	Bifidobacterium pseudolongum subsp. pseudolongum OX=31954 	0.95841885	0.09604308
+bin_362	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.9423484	0.73395973
+bin_363	0	0	Donors shared	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.7789305	0.9079106
+bin_364	0	0	Donors shared	Clostridium	Clostridium scindens (strain ATCC 35704 / DSM 5676 / VPI 13733 / 19) OX=411468 	0.6333008	0.7710127
+bin_37	0	0	Donors shared	Methanomethylophilus	Methanomethylophilus alvus (strain Mx1201) OX=1236689 	0.9991973	0.9159621
+bin_370	0	0	Donors shared	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.7559523	0.8883288
+bin_371	0	0	Donor1 specific	Chlamydia	Chlamydia suis OX=83559 	0.99860954	0.0020776498
+bin_373	0	0	Donors shared	Lactobacillus	Lactobacillus reuteri OX=1598 	0.54691017	0.90483916
+bin_376	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.787104	0.8836969
+bin_378	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.9646543	0.78278244
+bin_379	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.9279598	0.72410214
+bin_381	0	0	Donors shared	Lactobacillus	Lactobacillus reuteri OX=1598 	0.84997064	0.7421183
+bin_384	0	0	Donor1 specific	Coriobacteriia	Coriobacteriia bacterium OX=2052159 	0.9986625	0.09670477
+bin_387	0	0	Donors shared	Lactobacillus	Lactobacillus reuteri OX=1598 	0.6131806	0.89700484
+bin_389	1	0	Donor2 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.4086773	0.8518445
+bin_39	3	5	Donors shared	Alistipes	Alistipes shahii WAL 8301 OX=717959 	0.9997295	0.9772037
+bin_390	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.9230263	0.7185411
+bin_393	0	1	Donor2 specific	Subdoligranulum	Subdoligranulum variabile DSM 15176 OX=411471 	0.18801932	0.9996099
+bin_397	0	0	Donors shared	Collinsella	Collinsella sp. OX=1965294 	0.72920626	0.7366311
+bin_4	1	4	Donors shared	Clostridium	Clostridium perfringens OX=1502 	0.8778979	0.5753855
+bin_40	0	0	Donors shared	Evtepia	Evtepia gabavorous OX=2211183 	0.8069666	0.9993828
+bin_402	0	0	Donors shared	Lactobacillus	Lactobacillus pontis OX=35787 	0.5858913	0.95115465
+bin_403	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.7857092	0.8826819
+bin_404	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.8852675	0.9269681
+bin_406	0	0	Donor1 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.9369363	0.34206706
+bin_409	0	4	Donor2 specific	Bacteroides	Bacteroides uniformis OX=820 	0.1602313	0.7816267
+bin_41	1	5	Donors shared	Bacteroides	Bacteroides uniformis OX=820 	0.99655205	0.7907761
+bin_410	0	0	Donors shared	Lactobacillus	Lactobacillus amylovorus OX=1604 	0.8287436	0.9992393
+bin_413	0	0	Donors shared	Clostridium	Clostridium scindens (strain ATCC 35704 / DSM 5676 / VPI 13733 / 19) OX=411468 	0.6581965	0.8417387
+bin_414	0	0	Donors shared	Planctomycetaceae	Planctomycetaceae bacterium OX=2026779 	0.9966484	0.8778848
+bin_415	0	0	Donors shared	Lactobacillus	Lactobacillus amylovorus OX=1604 	0.8781244	0.991223
+bin_418	0	0	Donors shared	Erysipelotrichaceae	Erysipelotrichaceae bacterium OX=2049044 	0.9955796	0.84595495
+bin_42	2	4	Donor1 specific	Anaeromassilibacillus	Anaeromassilibacillus sp. An172 OX=1965570 	0.62823135	0.35601583
+bin_422	0	0	Donors shared	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.98842436	0.7970107
+bin_423	0	0	Donors shared	Lactobacillus	Lactobacillus amylovorus OX=1604 	0.8435002	0.9957818
+bin_424	0	2	Donors shared	Ruthenibacterium	Ruthenibacterium lactatiformans OX=1550024 	0.6191244	0.78524077
+bin_425	0	0	Donors shared	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.7836169	0.89287037
+bin_426	0	0	Donors shared	uncultured	uncultured Eubacterium sp. OX=165185 	0.58692205	0.9991567
+bin_429	0	0	Donors shared	Clostridium	Clostridium clostridioforme CAG:511 OX=1263066 	0.66585356	0.8429564
+bin_43	0	2	Donor2 specific	Ruminococcaceae	Ruminococcaceae bacterium OX=1898205 	0.077183105	0.68360305
+bin_431	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.7720268	0.8703672
+bin_435	0	0	Donors shared	Lactobacillus	Lactobacillus reuteri OX=1598 	0.83477676	0.7785501
+bin_436	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.93949753	0.7285362
+bin_438	0	0	Donor1 specific	Streptococcus	Streptococcus henryi OX=439219 	0.59601986	0.028756628
+bin_439	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.7836851	0.8863621
+bin_44	0	0	Donor1 specific	Corynebacterium	Corynebacterium frankenforstense DSM 45800 OX=1437875 	0.99492615	0.1934549
+bin_441	0	0	Donors shared	Lactobacillus	Lactobacillus amylovorus OX=1604 	0.8267945	0.9993255
+bin_443	0	0	Donors shared	Veillonella	Veillonella tobetsuensis OX=1110546 	0.69749826	0.97393316
+bin_446	0	0	Donors shared	Clostridiales	Clostridiales bacterium OX=1898207 	0.953218	0.9913812
+bin_45	0	1	Donor2 specific	Subdoligranulum	Subdoligranulum variabile DSM 15176 OX=411471 	0.20152473	0.9996184
+bin_451	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.85987663	0.72563595
+bin_452	0	0	Donors shared	Lactobacillus	Lactobacillus reuteri OX=1598 	0.60403436	0.91914535
+bin_453	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.769425	0.8678889
+bin_454	0	0	Donors shared	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.990346	0.792407
+bin_455	1	9	Donor1 specific	Bacteroides	Bacteroides fragilis OX=817 	0.52200377	0.09073458
+bin_456	0	0	Donors shared	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.9906744	0.7982008
+bin_458	0	0	Donors shared	Lactobacillus	Lactobacillus amylovorus OX=1604 	0.9940746	0.88325256
+bin_46	1	0	Donor2 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.4307417	0.8542947
+bin_460	0	0	Donors shared	Phascolarctobacterium	Phascolarctobacterium succinatutens YIT 12067 OX=626939 	0.9849812	0.9910641
+bin_461	0	0	Donors shared	Lactobacillus	Lactobacillus reuteri OX=1598 	0.62322634	0.9341547
+bin_462	1	0	Donor2 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.40329385	0.8443087
+bin_463	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.9367654	0.7835171
+bin_464	0	0	Donors shared	Clostridium	Clostridium clostridioforme CAG:511 OX=1263066 	0.7594002	0.91124433
+bin_465	0	0	Donor2 specific	Ruminococcaceae	Ruminococcaceae bacterium OX=1898205 	0.24042267	0.99754804
+bin_467	0	0	Donors shared	Clostridium	Clostridium scindens (strain ATCC 35704 / DSM 5676 / VPI 13733 / 19) OX=411468 	0.8856734	0.6388842
+bin_468	0	0	Donors shared	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.792106	0.91468555
+bin_469	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.76407856	0.7555978
+bin_47	0	0	Donors shared	Megasphaera	Megasphaera elsdenii OX=907 	0.9975585	0.71834224
+bin_473	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.9384624	0.7354709
+bin_475	0	0	Donors shared	Lactobacillus	Lactobacillus reuteri OX=1598 	0.61359775	0.92874163
+bin_476	0	0	Donors shared	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.9897997	0.7976889
+bin_477	0	0	Donors shared	Lactobacillus	Lactobacillus amylovorus OX=1604 	0.9906175	0.8962136
+bin_478	0	0	Donors shared	Lactobacillus	Lactobacillus amylovorus OX=1604 	0.80811197	0.9989865
+bin_48	0	0	Donors shared	Clostridiales	Clostridiales bacterium OX=1898207 	0.686762	0.9986663
+bin_480	0	0	Donor2 specific	Lactobacillus	Lactobacillus coleohominis 101-4-CHN OX=575594 	0.2759931	0.999357
+bin_482	0	0	Donor2 specific	Gardnerella	Gardnerella vaginalis OX=2702 	0.1269757	0.97438765
+bin_483	0	0	Donor1 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.94183284	0.35275736
+bin_484	0	0	Donors shared	Lactobacillus	Lactobacillus amylovorus OX=1604 	0.85825294	0.9894264
+bin_485	0	1	Donors shared	Butyricimonas	Butyricimonas virosa OX=544645 	0.9985818	0.6780306
+bin_486	0	1	Donor2 specific	Subdoligranulum	Subdoligranulum variabile DSM 15176 OX=411471 	0.18668295	0.99969757
+bin_490	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.93991977	0.72799915
+bin_491	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.952732	0.78398186
+bin_492	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.7701512	0.8705345
+bin_493	0	0	Donors shared	Lactobacillus	Lactobacillus reuteri OX=1598 	0.61921567	0.9145677
+bin_494	0	0	Donor2 specific	Clostridiales	Clostridiales bacterium OX=1898207 	0.39080653	0.74124634
+bin_497	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.93444693	0.7271663
+bin_498	0	0	Donors shared	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.98902345	0.80132574
+bin_499	0	0	Donors shared	Lactobacillus	Lactobacillus reuteri OX=1598 	0.51879865	0.8402649
+bin_5	0	0	Donor1 specific	Rothia	Rothia nasimurium OX=85336 	0.62676793	0.043439068
+bin_50	0	0	Donors shared	Clostridium	Clostridium scindens (strain ATCC 35704 / DSM 5676 / VPI 13733 / 19) OX=411468 	0.9587661	0.9939448
+bin_500	0	0	Donor1 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.94632053	0.354551
+bin_501	0	0	Donors shared	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.7822638	0.9113282
+bin_502	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.86697173	0.79963565
+bin_508	0	0	Donors shared	Lactobacillus	Lactobacillus amylovorus OX=1604 	0.98155963	0.90688914
+bin_511	1	0	Donor2 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.41554102	0.84754026
+bin_512	0	0	Donor1 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.9381129	0.36090586
+bin_514	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.85926604	0.7261406
+bin_519	0	0	Donors shared	Lactobacillus	Lactobacillus amylovorus OX=1604 	0.8511732	0.9956429
+bin_520	0	0	Donors shared	Phascolarctobacterium	Phascolarctobacterium succinatutens YIT 12067 OX=626939 	0.9692974	0.9980588
+bin_521	0	0	Donors shared	Lactobacillus	Lactobacillus reuteri OX=1598 	0.8395329	0.77375543
+bin_523	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.8805393	0.9458991
+bin_525	1	0	Donor2 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.40638173	0.854597
+bin_526	0	0	Donors shared	Clostridium	Clostridium clostridioforme CAG:511 OX=1263066 	0.9436343	0.89197755
+bin_527	2	4	Donor2 specific	Bacteroides	Bacteroides intestinalis OX=329854 	0.0338874	0.6759944
+bin_529	1	0	Donor2 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.40848273	0.8536246
+bin_530	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.8838276	0.72245735
+bin_533	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.7845493	0.8845533
+bin_534	0	0	Donors shared	Mogibacterium	Mogibacterium diversum OX=114527 	0.9262967	0.9792051
+bin_536	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.90259826	0.75523597
+bin_538	0	0	Donors shared	Lactobacillus	Lactobacillus crispatus OX=47770 	0.77060664	0.8684784
+bin_541	0	0	Donor1 specific	Blautia	Blautia sp. CAG:257 OX=1262756 	0.863884	0.46960333
+bin_542	1	0	Donor2 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.41231996	0.85655755
+bin_543	0	0	Donors shared	Lactobacillus	Lactobacillus vaginalis DSM 5837 = ATCC 49540 OX=1423814 	0.8680465	0.87149054
+bin_544	0	0	Donors shared	Lactobacillus	Lactobacillus reuteri OX=1598 	0.84035283	0.7678376
+bin_546	0	5	Donors shared	Clostridium	Clostridium perfringens OX=1502 	0.8980477	0.5689777
+bin_547	0	0	Donors shared	Lactobacillus	Lactobacillus amylovorus OX=1604 	0.8539978	0.9905672
+bin_548	0	0	Donors shared	Erysipelotrichaceae	Erysipelotrichaceae bacterium OX=2049044 	0.9076358	0.9971878
+bin_55	0	0	Donor1 specific	Bifidobacterium	Bifidobacterium choerinum OX=35760 	0.50746256	0.010868108
+bin_555	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.7636755	0.76321465
+bin_559	0	0	Donor1 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.8853109	0.35525045
+bin_561	0	0	Donor1 specific	Mogibacterium	Mogibacterium diversum OX=114527 	0.9986186	0.0520628
+bin_562	2	10	Donor2 specific	Bacteroides	Bacteroides vulgatus OX=821 	0.35471073	0.9755094
+bin_563	0	0	Donor1 specific	Streptococcus	Streptococcus gallolyticus OX=315405 	0.94859046	0.36041358
+bin_567	0	0	Donors shared	Collinsella	Collinsella sp. OX=1965294 	0.73678076	0.81549007
+bin_568	0	0	Donors shared	Lactobacillus	Lactobacillus reuteri OX=1598 	0.52011716	0.84623724
+bin_569	0	0	Donor1 specific	Anaerovibrio	Anaerovibrio sp. JC8 OX=1240085 	0.998741	0.008224277
+bin_570	0	1	Donor2 specific	Subdoligranulum	Subdoligranulum variabile DSM 15176 OX=411471 	0.1572947	0.98391366
+bin_572	2	2	Donors shared	Clostridium	Clostridium perfringens OX=1502 	0.8373585	0.5578029
+bin_578	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.87233037	0.73159367
+bin_58	0	0	Donor1 specific	[Actinobacillus]	[Actinobacillus] rossii OX=123820 	0.7285418	0.18914156
+bin_581	0	1	Donor2 specific	Turicibacter	Turicibacter sanguinis PC909 OX=702450 	0.4336146	0.731219
+bin_61	2	10	Donor2 specific	Bacteroides	Bacteroides massiliensis B84634 = Timone 84634 = DSM 17679 = JCM 13223 OX=1121098 	0.033733346	0.9999264
+bin_63	0	0	Donor1 specific	Corynebacterium	Corynebacterium testudinoris OX=136857 	0.99871165	0.035766684
+bin_64	0	0	Donors shared	Clostridium	Clostridium scindens (strain ATCC 35704 / DSM 5676 / VPI 13733 / 19) OX=411468 	0.8922422	0.66105175
+bin_65	1	1	Donors shared	Clostridiales	Clostridiales bacterium OX=1898207 	0.80968094	0.9975024
+bin_68	0	0	Donor2 specific	Methanobrevibacter	Methanobrevibacter smithii DSM 2375 OX=483214 	0.48394126	0.99880147
+bin_69	0	0	Donor1 specific	Lactobacillus	Lactobacillus mucosae OX=97478 	0.73844194	0.028299756
+bin_72	0	0	Donors shared	Mogibacterium	Mogibacterium diversum OX=114527 	0.9957051	0.9793258
+bin_75	0	0	Donors shared	Turicibacter	Turicibacter sanguinis OX=154288 	0.99752104	0.79303443
+bin_76	0	0	Donors shared	Denitrobacterium	Denitrobacterium detoxificans OX=79604 	0.9983878	0.9285639
+bin_77	0	0	Donors shared	uncultured	uncultured Eubacterium sp. OX=165185 	0.9973674	0.93098193
+bin_78	0	0	Donors shared	Clostridium	Clostridium scindens (strain ATCC 35704 / DSM 5676 / VPI 13733 / 19) OX=411468 	0.99164426	0.9497715
+bin_79	1	1	Donor1 specific	Ruminococcaceae	Ruminococcaceae bacterium OX=1898205 	0.7920266	0.11204156
+bin_8	1	1	Donors shared	Clostridiales	Clostridiales bacterium OX=1898207 	0.98251677	0.7325542
+bin_85	0	0	Donors shared	Escherichia	Escherichia coli (strain K12) OX=83333 	0.97390985	0.7529882
+bin_88	0	0	Donor2 specific	Clostridiales	Clostridiales bacterium OX=1898207 	0.32457966	0.9993982
+bin_89	0	1	Donor2 specific	Subdoligranulum	Subdoligranulum variabile DSM 15176 OX=411471 	0.1719921	0.9995468
+bin_91	0	1	Donor1 specific	Bacteroidetes	Rikenellaceae bacterium OX=2049048 	0.99534357	0.35127664
+bin_93	1	3	Donors shared	Porphyromonadaceae	Porphyromonadaceae bacterium OX=2049046 	0.9988575	0.99071306
+bin_95	0	0	Donors shared	Clostridiales	Clostridiales bacterium OX=1898207 	0.9996314	0.58118737
+bin_96	0	0	Donors shared	Corynebacterium	Corynebacterium xerosis OX=1725	0.9962199	0.95530045
+bin_97	1	1	Donors shared	Prevotella	Prevotella sp. CAG:873 OX=1262936 	0.9763021	0.99881727
+bin_98	0	0	Donor1 specific	[Actinobacillus]	[Actinobacillus] rossii OX=123820 	0.71524066	0.1728466

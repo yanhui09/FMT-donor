@@ -4,15 +4,15 @@ source("scripts_vis/kaiju_beta_nr_euk_species.R")
 source("scripts_vis/dbrda_kaiju.R")
 
 # Figure. 3A
-p_alpha_16s2 <- p_alpha_16s + labs(tag = "A") + theme(plot.tag.position = "topleft")
+p_alpha_16s2 <- p_alpha_16s + labs(tag = "a") + theme(plot.tag.position = "topleft")
 # Figure. 3B
-p_alpha_all2 <- p_alpha_all + labs(tag = "B") + theme(plot.tag.position = "topleft")
+p_alpha_all2 <- p_alpha_all + labs(tag = "b") + theme(plot.tag.position = "topleft")
 # Figure.3C
-p_wunifrac_16s2 <- p_wunifrac_16s + labs(tag = "C") + theme(plot.tag.position = "topleft")
+p_wunifrac_16s2 <- p_wunifrac_16s + labs(tag = "c") + theme(plot.tag.position = "topleft")
 # Figure.3D
-p_bray_all2 <- p_bray_all + labs(tag = "D") + theme(plot.tag.position = "topleft")
+p_bray_all2 <- p_bray_all + labs(tag = "d") + theme(plot.tag.position = "topleft")
 # Figure.3E
-p_dbrda2 <- p_dbrda+ labs(tag = "E") + theme(plot.tag.position = "topleft")
+p_dbrda2 <- p_dbrda+ labs(tag = "e") + theme(plot.tag.position = "topleft")
 layout_man <- c(
   area(t = 1, b = 4, l = 1, r = 5),
   area(t = 1, b = 1, l = 3, r = 5)
@@ -25,7 +25,6 @@ p_merged <- p_alpha_16s2  + p_alpha_all2 +
 
 p_merged / p_dbrda3
 
-ggsave("figure/figure_3.png", height = 14, width=11, #device=cairo_pdf
-       )
-
+ggsave("figure/figure_3.png", height = 14, width=11)
+#ggsave("figure/figure_3.pdf", height = 14, width=11, device=cairo_pdf)
 sessionInfo()

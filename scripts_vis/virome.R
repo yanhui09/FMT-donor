@@ -12,6 +12,22 @@ votu.donor <- votu.donor %>%
                                donor2 > 0 & donor1 > 0 ~ "Donors shared",
                                TRUE ~ "Recipients specific"))
 table(votu.donor$source)
+#create a venn plot 
+library(ggvenn)
+votu_donor1 <- rownames(votu.donor)[votu.donor$donor1>0]
+votu_donor2 <- rownames(votu.donor)[votu.donor$donor2>0]
+votu_recipients_tb <- subset(votu, select = -c(X17119.05.39.243200084.sort.bam, X17119.05.40.243200090.sort.bam))
+votu_recipients <- rownames(votu_recipients_tb)[rowSums(votu_recipients_tb)>0]
+
+votu.list <- list(`Donor 1`=votu_donor1,
+                  `Donor 2`=votu_donor2,
+                  `Recipients`=votu_recipients)
+
+p.venn <- ggvenn(votu.list, c("Donor 1", "Donor 2", "Recipients"), text_size=3, set_name_size = 4)
+  
+ggsave("figure/figure_s8_votu_venn.png",p.venn, height = 4, width = 4)
+ggsave("figure/figure_s8_votu_venn.pdf",p.venn, height = 4, width = 4, device = cairo_pdf)
+
 # include the vcontact2 genome2genoem file
 vct2_mapping <- read.table("data/votus/genome_by_genome_overview_tax_predictions.txt", sep = "\t", header = TRUE, row.names = 1)
 vct2_mapping <- vct2_mapping %>%
@@ -69,7 +85,7 @@ write.table(vct2_mapping_combined, "table/vct2_mapping.tsv", sep = "\t", row.nam
 unique(vct2_mapping_combined$color)
 unique(vct2_mapping_combined$mapping2)
 # Add a legend
-pdf("figure/vct2_legend.pdf",height = 8, width = 10)
+pdf("figure/figure_s8_vct2_legend.pdf",height = 8, width = 10)
 #palette(unique(vct2_mapping_combined$color))
 plot(NULL ,xaxt='n',yaxt='n',bty='n',ylab='',xlab='', xlim=0:1, ylim=0:1)
 legend("center", 
@@ -163,5 +179,5 @@ p <- ggplot(as.data.frame(consensus_f),
         legend.position = "bottom",
         legend.title = element_blank())
    
-ggsave("figure/figure_viSpacer.png",p, height = 8, width = 7.5)
-ggsave("figure/figure_viSpacer.pdf",p, height = 8, width = 7.5, device = cairo_pdf)
+ggsave("figure/figure_7D.png",p, height = 8, width = 7.5)
+ggsave("figure/figure_7D.pdf",p, height = 8, width = 7.5, device = cairo_pdf)

@@ -84,7 +84,7 @@ table_long_mean <- table_long_mean %>%
 p_irep_lac_mean <-ggplot(data = table_long_mean, mapping = aes(x=Group, y=mean)) +
   stat_boxplot(geom ='errorbar', linetype=1, width=0.5) + 
   geom_boxplot(outlier.shape = NA, aes(fill=Group)) +
-  geom_point(position = position_jitter(w=0.1),size=2, aes(color=NEC)) +
+  geom_point(position = position_jitter(w=0.1, h=0),size=2, aes(color=NEC)) +
   labs(x="", y="iRep",color="NEC",title = "Lactobacilli") +
   scale_color_manual(values = c("black", "gray")) +
   scale_fill_manual(values = c(cols[1], cols[2], cols[3])) +
@@ -93,4 +93,5 @@ p_irep_lac_mean <-ggplot(data = table_long_mean, mapping = aes(x=Group, y=mean))
   mytheme
 p_irep_lac_mean
 ggsave("figure/figure_7A.png",p_irep_lac_mean, height = 4.5, width = 4)
+#ggsave("figure/figure_7A.pdf",p_irep_lac_mean, height = 4.5, width = 4, device = cairo_pdf)
   

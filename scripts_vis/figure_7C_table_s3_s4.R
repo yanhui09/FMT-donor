@@ -275,16 +275,16 @@ p_dbrda_mag <- ggplot(db_rda.site, aes(CAP1, CAP2)) +
         )
 
 p_dbrda_mag
-ggsave("figure/figure_7D.png", height = 5, width = 6, #device = cairo_pdf
+ggsave("figure/figure_7C.png", height = 5, width = 6, #device = cairo_pdf
        )
 #################################
-#table_s3
+#table_s4
 module_out <- subset(p_tab, select = c(koID, p,p_adjusted, enrichment))
 colnames(module_out) <- c("Module", "P", "Adjusted P","Enrichment")
 module_out_f <- module_out[module_out$`Adjusted P`< 0.1,]
 module_out_f <- module_out_f[order(module_out_f$`Adjusted P`),]
-write.table(module_out_f,"table/table_s3.tsv", sep = "\t", row.names = F, quote = F)
-#table_s4
+write.table(module_out_f,"table/table_s4.tsv", sep = "\t", row.names = F, quote = F)
+#table_s3
 #M00079 and M00078 level in Donor-specific MAGs and its phylogen
 ko_tab_s <- ko_tab[,c('M00078:Heparan sulfate degradation','M00079:Keratan sulfate degradation')]
 ko_tab_s <- as.data.frame(ko_tab_s)
@@ -297,4 +297,4 @@ ko_tab_s_detailed$breath_donor1 <- breadth_df$`17119-05-40-243200090`[index]
 #donor 2 17119-05-39-243200084
 ko_tab_s_detailed$breath_donor2 <- breadth_df$`17119-05-39-243200084`[index]
 
-write.table(ko_tab_s_detailed, "table/table_s4.tsv", sep = "\t", row.names = FALSE, quote = FALSE)
+write.table(ko_tab_s_detailed, "table/table_s3.tsv", sep = "\t", row.names = FALSE, quote = FALSE)

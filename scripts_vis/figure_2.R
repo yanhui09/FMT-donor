@@ -1,6 +1,7 @@
 # load package and data import
 ##################################################
 library(ggplot2)
+library(ggbeeswarm)
 library(extrafont)
 library(ggpubr)
 library(readxl)
@@ -87,7 +88,7 @@ p_NEC
 #############################################################
 #Figure.2B NEC severity lm, litter as random effect, #tukey_hsd
 data_tab <- data.frame(list.data$Clinic)
-data_tab <- subset(data_tab, select = c(ID,Group, NEC_severity,Litter))
+data_tab <- subset(data_tab, select = c(ID,Group, NEC_max,Litter))
 data_tab_f <- data_tab[data_tab$ID %in% mapping$FMT_ID,]
 data_tab_f$Group <- factor(data_tab_f$Group, levels = c("CON","NEW", "OLD"), labels = c("CON","FMT1","FMT2"))
 data_tab_long <- melt(data_tab_f, id.vars = c("ID","Group", "Litter"))
@@ -122,13 +123,14 @@ data_tab_long$NEC <- factor(data_tab_long$NEC, levels = c(0,1), labels = c("No",
 
 
 p_NECseverity <- ggplot(data_tab_long, aes(x= Group, y= value)) +
-  stat_boxplot(geom ='errorbar', linetype=1, width=0.5) + 
-  geom_boxplot(outlier.shape = NA, aes(fill=Group)) +
-  geom_point(position = position_jitter(w=0.1),size=2, aes(color=NEC)) +
+  geom_violin(aes(fill=Group)) +
+  geom_beeswarm(cex = 2, size=2, aes(color=NEC)) +
+  geom_hline(yintercept=3.5, linetype="dashed", color = "black") +
   scale_color_manual(values = c("black", "gray")) +
   scale_fill_manual(values = cols) +
-  labs(x="", y="NEC severity scores", title=paste("")) +
+  labs(x="", y="NEC max scores", title=paste("")) +
   stat_pvalue_manual(stat.test,label = "p.adj.signif", tip.length = 0,size = 6)+
+  scale_y_continuous(breaks = seq(1,6,1)) +
   theme_classic() +
   theme(plot.title = element_text(hjust=0.5, family = "Arial", size=12),
         legend.text = element_text(family = "Arial", size = 10),
@@ -204,7 +206,7 @@ data_tab_long$NEC <- factor(data_tab_long$NEC, levels = c(0,1), labels = c("No",
 p_bw <- ggplot(data_tab_long, aes(x= Group, y= value)) +
   stat_boxplot(geom ='errorbar', linetype=1, width=0.5) + 
   geom_boxplot(outlier.shape = NA, aes(fill=Group)) +
-  geom_point(position = position_jitter(w=0.1),size=2, aes(color=NEC)) +
+  geom_point(position = position_jitter(w=0.1, h=0),size=2, aes(color=NEC)) +
   scale_color_manual(values = c("black", "gray")) +
   scale_fill_manual(values = cols) +
   labs(x="", y="Growth rate (g/kg/d)", title=paste("")) +
@@ -246,7 +248,7 @@ data_tab_long$NEC <- factor(data_tab_long$NEC, levels = c(0,1), labels = c("No",
 p_P_DPPIV <- ggplot(data_tab_long, aes(x= Group, y= value)) +
   stat_boxplot(geom ='errorbar', linetype=1, width=0.5) + 
   geom_boxplot(outlier.shape = NA, aes(fill=Group)) +
-  geom_point(position = position_jitter(w=0.1),size=2, aes(color=NEC)) +
+  geom_point(position = position_jitter(w=0.1, h=0),size=2, aes(color=NEC)) +
   scale_color_manual(values = c("black", "gray")) +
   scale_fill_manual(values = cols) +
   labs(x="", y="Proximal SI DPPIV (U/g)", title=paste("")) +
@@ -287,7 +289,7 @@ data_tab_long$NEC <- factor(data_tab_long$NEC, levels = c(0,1), labels = c("No",
 p_M_maltase <- ggplot(data_tab_long, aes(x= Group, y= value)) +
   stat_boxplot(geom ='errorbar', linetype=1, width=0.5) + 
   geom_boxplot(outlier.shape = NA, aes(fill=Group)) +
-  geom_point(position = position_jitter(w=0.1),size=2, aes(color=NEC)) +
+  geom_point(position = position_jitter(w=0.1, h=0),size=2, aes(color=NEC)) +
   scale_color_manual(values = c("black", "gray")) +
   scale_fill_manual(values = cols) +
   labs(x="", y="Median SI Maltase (U/g)", title=paste("")) +
@@ -308,8 +310,9 @@ p_M_maltase
 # integrate all the sub-figure together wiith patchwork
 library(patchwork)
 p_merge <- p_NEC + p_NECseverity + p_LM  +
-  p_bw  + p_P_DPPIV + p_M_maltase + plot_annotation(tag_levels = 'A') + plot_layout(guides = 'collect', ncol=3)
+  p_bw  + p_P_DPPIV + p_M_maltase + plot_annotation(tag_levels = 'a') + plot_layout(guides = 'collect', ncol=3)
 p_merge
-ggsave("figure/figure_2.png",p_merge, height = 7, width = 10)
+ggsave("figure/figure_2.png",p_merge, height = 8, width = 13)
+#ggsave("figure/figure_2.pdf",p_merge, height = 8, width = 13, device = cairo_pdf)
 ###########################sessionInfo to keep track
 sessionInfo()
