@@ -45,7 +45,6 @@ dbanov <- anova.cca(db_rda, by="term", permutations = 999)
 dbanov
 db_rda <- capscale(species_tab~Group*SOW, env, distance = 'bray', add = TRUE)
 dbanov <- anova.cca(db_rda, by="term", permutations = 999)
-db_rda$`Pr(>F)` <- p.adjust(db_rda$`Pr(>F)`, method = 'bonferroni')
 dbanov
 
 db_rda <- capscale(species_tab~Group+SOW, env, distance = 'bray', add = TRUE)
