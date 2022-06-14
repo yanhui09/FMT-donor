@@ -1,5 +1,8 @@
 # FMT-donor
-This is a script repository for data analysis in the  FMT-donor paper, "Donor specific microbiome affects fecal microbiota transplantation efficacy on necrotizing enterocolitis in preterm pigs". [Click me](https://www.nature.com/articles/s41522-022-00310-2)
+This is a script repository for data analysis in the  FMT-donor paper, "Donor-dependent fecal microbiota transplantation efficacy against necrotizing enterocolitis in preterm pigs". \[[Click me](https://www.nature.com/articles/s41522-022-00310-2)\]
+
+A tiny blog describing the main finding is posted on Nature Portfolio Microbiology Community. \[[Click me](https://microbiologycommunity.nature.com/posts/exploring-donor-difference-in-neonatal-fecal-microbiota-transplantation)\]
+
 
 # Directory structure
 ```  
